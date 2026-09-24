@@ -1,0 +1,5 @@
+# local ScrollCraft settings and working files
+.scrollcraft.json
+node_modules/
+lab/
+*.log
