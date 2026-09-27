@@ -1,0 +1,730 @@
+{
+ "lang": "sk",
+ "ui": {
+  "notice": "Strojový preklad pomocou AI, vytvorený naživo počas zasadnutia. Neprešiel kontrolou človeka. Referenčným textom je anglické znenie.",
+  "language": "Jazyk",
+  "slide": "Snímka",
+  "source": "Zdroj",
+  "open": "Otvoriť",
+  "first_version": "Prvá verzia tejto stránky",
+  "video_note": "Ukážkové video sa premieta iba v sále a nezverejňuje sa."
+ },
+ "slides": [
+  {
+   "id": "01",
+   "items": [
+    {
+     "type": "TEXT",
+     "text": "Stretnutie európskeho vedenia · 2026"
+    },
+    {
+     "type": "TEXT",
+     "text": "AI pre vedenie ISKCONu"
+    },
+    {
+     "type": "TEXT",
+     "text": "Vedenie, správa a uplatnenie v organizácii"
+    },
+    {
+     "type": "TEXT",
+     "text": "Prvá časť z dvoch · New Mayapur, Francúzsko · 26.–27. septembra 2026 · prednáša Pitambara dás"
+    }
+   ]
+  },
+  {
+   "id": "02",
+   "items": [
+    {
+     "type": "STAT",
+     "value": "88%",
+     "text": "opýtaných organizácií uvádza, že používa AI aspoň v jednej oblasti svojej činnosti",
+     "source": "Stanford AI Index 2026 · údaj o zavádzaní podľa McKinsey"
+    },
+    {
+     "type": "STAT",
+     "value": "362",
+     "text": "incidentov súvisiacich s AI zaznamenaných v roku 2025 oproti 233 v roku 2024",
+     "source": "Stanford AI Index 2026"
+    },
+    {
+     "type": "STAT",
+     "value": "7%",
+     "text": "opýtaných neziskových organizácií uvádza výrazné prínosy pre kapacitu a strategické priority",
+     "source": "Správa Virtuous 2026 · 346 neziskových organizácií"
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Rozdiel",
+      "Používanie je bežné. Zmeraný prínos a kontrola sú zriedkavé."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Stav",
+      "Prichádza prostredníctvom e-mailu, dokumentov, vyhľadávania a nástrojov na porady bez toho, aby sa ktokoľvek rozhodol ju zaviesť."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Dôsledok",
+      "Ak neexistujú žiadne zásady, pracovníci si nejaké vymyslia."
+     ]
+    }
+   ],
+   "label": "Vedenie a organizácia",
+   "title": "AI je už vnútri organizácie"
+  },
+  {
+   "id": "03",
+   "items": [
+    {
+     "type": "CARD",
+     "parts": [
+      "Úplná kontrola",
+      "Skutočným nastavením je oprávnenie",
+      "Ak má prístup, asistent môže otvárať, meniť a mazať súbory, posielať správy a pristupovať k pripojeným systémom. Účet, ktorý si požičia, určuje, kam až siaha."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Bez dozoru",
+      "Nikto sa nepozerá",
+      "Ak ho necháme bežať samotného, pokračuje aj po svojej prvej chybe. Nesprávny pokyn rýchlo opakovaný sa napráva ťažšie než nesprávna veta."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Hranica",
+      "Obmedzenia sa dohodnú vopred",
+      "Vopred rozhodnite, ktoré úkony vyžadujú potvrdenie, ktoré informácie zostanú mimo a kto dokáže zastaviť beh, ktorý sa už začal."
+     ]
+    },
+    {
+     "type": "BAND",
+     "text": "Jeden oprávnený asistent siaha ďalej než pracovný stôl jedného človeka. Jeho obmedzenia sa dohodnú pred začiatkom úlohy."
+    }
+   ],
+   "label": "Riziko, ktoré nesieme",
+   "title": "Keď asistent môže konať"
+  },
+  {
+   "id": "04",
+   "items": [
+    {
+     "type": "TEXT",
+     "text": "Každé použitie potrebuje niekoho, kto skontroluje výsledok a prevezme zaň zodpovednosť."
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Oblasť",
+      "Čo získame",
+      "Riziko bez kontroly"
+     ]
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Návrhy textov",
+      "Rýchlejšie listy, zápisnice a správy",
+      "Neskontrolované správy odoslané v našom mene"
+     ]
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Jazyk",
+      "Návrhy vo viacerých jazykoch",
+      "Chyby vo význame a terminológii"
+     ]
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Pamäť",
+      "Vyhľadateľné uznesenia a záznamy",
+      "Vymyslené citáty a nesprávne odkazy"
+     ]
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Analýza",
+      "Rýchlejší výskum a porovnávanie",
+      "Nepodložené závery, ktoré znejú isto"
+     ]
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Kapacita",
+      "Viac času na starostlivosť o oddaných a na službu",
+      "Menej príležitostí zaškoliť nástupcov"
+     ]
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Hlas",
+      "Jednoduchší prístup k nahrávkam a textom",
+      "Vymyslené slová povedané známym hlasom"
+     ]
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Dodávatelia",
+      "Schopnosti, ktoré nemusíme budovať sami",
+      "Závislosť od niekoľkých poskytovateľov a ich podmienok"
+     ]
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Pravidlá",
+      "Jasné očakávania, keď sa raz stanovia",
+      "Požiadavky v Európe sa naďalej menia podľa spôsobu použitia"
+     ]
+    }
+   ],
+   "label": "Prínosy a náklady",
+   "title": "Prínosy a riziká AI v našej práci"
+  },
+  {
+   "id": "05",
+   "items": [
+    {
+     "type": "TEXT",
+     "text": "Tu v sále sa prehrá označená ukážka AI: známa tvár a známy hlas hovoria slová, ktoré nikdy neboli vyslovené. Nahrávka sa nezverejňuje. Povolenie od BBT sa vzťahuje iba na túto sálu."
+    },
+    {
+     "type": "TEXT",
+     "text": "Čo z toho vyplýva: rozpoznateľná tvár a rozpoznateľný hlas samy osebe nepreukazujú, odkiaľ slová pochádzajú. Nasledujúca snímka ukazuje, čo sa s tým dá robiť."
+    }
+   ],
+   "label": "Ukážka",
+   "title": "Čí je to hlas?"
+  },
+  {
+   "id": "06",
+   "items": [
+    {
+     "type": "CARD",
+     "parts": [
+      "Digitálne profily a podpisy",
+      "Digitálny profil pre každý súbor",
+      "Zaznamenajte zdrojové údaje každého originálu a hash súboru. BBT Archive môže záznam digitálne podpísať. Nástroj na overovanie potom porovná hash a overí podpis."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Overovanie citátov",
+      "AI nájde zdroj",
+      "AI nájde v BBT Archive presné pasáže a ich kontext. Citát, ktorý sa nenájde ani po úplnej kontrole, je podozrivý. Samotná podobnosť hlasu nemôže potvrdiť pravosť nahrávky."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Predchádzajúca otázka",
+      "Mal by taký nástroj existovať?",
+      "Skôr než sa opýtame, či služba „opýtaj sa Prabhupádu“ odpovedá presne, musíme sa opýtať, či by mala existovať. Syntetizovaná odpoveď v jeho podobe nie je jeho pokynom a oddaní nemusia rozdiel počuť."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Platformy a právo",
+      "Opatrenia platforiem a zákonné práva",
+      "Content ID rozpoznáva opätovne použité nahrávky. Držitelia práv môžu postupovať proti porušeniam. Pravidlá EÚ vyžadujú zverejnenie pri deepfakoch, na ktoré sa vzťahujú."
+     ]
+    },
+    {
+     "type": "BAND",
+     "text": "Schválené nástroje by mali citovať Archív a oddeľovať citát od zhrnutia. Či je personifikovaný nástroj vôbec povolený, je samostatné rozhodnutie."
+    }
+   ],
+   "label": "Pravosť a dôkaz",
+   "title": "Digitálne overovanie obrázkov, zvuku a videa"
+  },
+  {
+   "id": "07",
+   "items": [
+    {
+     "type": "CARD",
+     "parts": [
+      "Náš pracovný postup",
+      "Najprv ľudský preklad",
+      "Hotová kapitola od prekladateľa, človeka, s bežnou redakčnou prácou. Stanovené kontroly prebehnú až potom, nikdy namiesto toho."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Čo kontroly zistili",
+      "Dvanásť titulov, približne 2 000 zistení",
+      "Zistenia sú zoradené podľa závažnosti. Redaktor každé z nich prijme alebo zamietne a potvrdených chýb je menej."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Najväčší prípad",
+      "913 000 riadkov, 50 000 opráv",
+      "Bulharský slovník delenia slov. Ručne dve hodiny denne počas troch rokov. S týmito kontrolami dve hodiny denne počas troch týždňov."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Precedens",
+      "Nástroje sa menili už predtým",
+      "Jeho Guru Mahárádža nazval tlačiarenský stroj bṛhad-mṛdaṅga, veľký bubon. Tieto knihy diktoval do prístroja. Nástroje sa zmenili, zodpovednosť nie."
+     ]
+    },
+    {
+     "type": "BAND",
+     "text": "Stroj nachádza. Redaktor rozhoduje."
+    },
+    {
+     "type": "LINK",
+     "text": "Ukážková správa: kontrola diakritiky v Šrí Íšopanišad",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/files/qa-report-sample.html"
+    },
+    {
+     "type": "LINK",
+     "text": "Prompt, ktorý stojí za kontrolou významu",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/files/prompt-translation-check.txt"
+    }
+   ],
+   "label": "Vnútorný prípad",
+   "title": "Kontroly pomocou AI v našej výrobe kníh"
+  },
+  {
+   "id": "08",
+   "items": [
+    {
+     "type": "STEP",
+     "text": "Pripravená ukážková zbierka. 50 súborov s približne 23 miliónmi slov, pripravených pre túto ukážku. Manifest opisuje rozsah tejto zbierky."
+    },
+    {
+     "type": "STEP",
+     "text": "Jedna presne položená otázka. „Čo hovoril o deťoch“ prinesie tisíc výrokov. Vymedzená otázka prinesie pasáž, ktorú môžeme otvoriť a prečítať."
+    },
+    {
+     "type": "STEP",
+     "text": "Odkazy, ktoré môžeme preveriť. Otvorte citovaný verš, list alebo prepis. Prečítajte si okolitú pasáž a rozlíšte citáty od zhrnutia modelu."
+    },
+    {
+     "type": "BAND",
+     "text": "Táto ukážka znázorňuje overovanie zdrojov. Referenčným zdrojom zostáva BBT Archive."
+    },
+    {
+     "type": "LINK",
+     "text": "Manifest korpusu",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/files/notebooklm-corpus-MANIFEST.md"
+    }
+   ],
+   "label": "Ukážka",
+   "title": "Otázky zodpovedané s odkazmi na zdroje"
+  },
+  {
+   "id": "09",
+   "items": [
+    {
+     "type": "TRY",
+     "label": "Skúste vyhľadať",
+     "terms_en": [
+      "succession",
+      "child protection",
+      "temple president",
+      "zonal secretary",
+      "sannyasa",
+      "dispute",
+      "trustee",
+      "vyasa-puja"
+     ]
+    },
+    {
+     "type": "STEP",
+     "text": "Nariadené v roku 1995. Uznesenie GBC z roku 1995 požadovalo jednotný Zákonník. Táto ukážka používa ako východisko vydanie z roku 2018."
+    },
+    {
+     "type": "STEP",
+     "text": "Zostavené cez noc. Zverejnené uznesenia z rokov 2019 až 2026 usporiadané podľa kapitol knihy, s odkazmi na zdrojové dokumenty."
+    },
+    {
+     "type": "STEP",
+     "text": "Návrh a nič viac. Neschválený pracovný návrh. Poverený výbor musí preskúmať, ktoré ustanovenia zostávajú v platnosti, a vyriešiť rozpory."
+    },
+    {
+     "type": "BAND",
+     "text": "422 strán s vyhľadávaním a odkazmi na zdroje. Právne a inštitucionálne preskúmanie je naďalej dôležité."
+    },
+    {
+     "type": "LINK",
+     "text": "succession",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=succession",
+     "keep_en": true
+    },
+    {
+     "type": "LINK",
+     "text": "child protection",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=child%20protection",
+     "keep_en": true
+    },
+    {
+     "type": "LINK",
+     "text": "temple president",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=temple%20president",
+     "keep_en": true
+    },
+    {
+     "type": "LINK",
+     "text": "zonal secretary",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=zonal%20secretary",
+     "keep_en": true
+    },
+    {
+     "type": "LINK",
+     "text": "sannyasa",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=sannyasa",
+     "keep_en": true
+    },
+    {
+     "type": "LINK",
+     "text": "dispute",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=dispute",
+     "keep_en": true
+    },
+    {
+     "type": "LINK",
+     "text": "trustee",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=trustee",
+     "keep_en": true
+    },
+    {
+     "type": "LINK",
+     "text": "vyasa-puja",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=vyasa-puja",
+     "keep_en": true
+    },
+    {
+     "type": "LINK",
+     "text": "Otvorte ho teraz · haripetrov-stack.github.io/iskcon-law-book",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/"
+    },
+    {
+     "type": "LINK",
+     "text": "Ten istý návrh vo formáte PDF",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/iskcon-law-draft-2018-2026.pdf"
+    }
+   ],
+   "label": "Ukážka",
+   "title": "Vyhľadávateľný návrh Zákonníka ISKCONu"
+  },
+  {
+   "id": "10",
+   "items": [
+    {
+     "type": "CARD",
+     "parts": [
+      "Slabý",
+      "Krátky všeobecný prompt",
+      "„Porovnaj bulharský preklad a angličtinu.“ Odpoveď by sa mohla týkať čohokoľvek a zahodí sa."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Silný",
+      "Vymedzená úloha",
+      "„Kontroluješ hotový bulharský preklad voči anglickému originálu. Oba súbory sú priložené. Uveď iba miesta, kde sa význam líši: anglické znenie, bulharské znenie a dôvod, v tabuľke. Nič iné nemeň.“"
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Štyri časti",
+      "Rola, materiál, úloha, forma",
+      "Kto je. Čo má pred sebou. Čo sa od neho chce. V akej forme."
+     ]
+    },
+    {
+     "type": "BAND",
+     "text": "Užitočný prompt uvádza rolu, zdrojový materiál, úlohu a požadovaný formát."
+    },
+    {
+     "type": "LINK",
+     "text": "Prompt pripravený na úpravu",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/files/prompt-translation-check.txt"
+    }
+   ],
+   "label": "Prakticky",
+   "title": "Ako napísať prompt, ktorý funguje"
+  },
+  {
+   "id": "11",
+   "items": [
+    {
+     "type": "CARD",
+     "parts": [
+      "Živá ukážka",
+      "Voice Chat",
+      "Ukazuje dobrý prompt: presné pokyny zadané hlasom."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Vytvorené za niekoľko dní",
+      "Mesiace práce špecialistov",
+      "Štruktúra stránky, kód, šablóny stránok a hromadné spracovanie zvukových súborov. Nahrávky, dizajn a chvíľu zverejnenia vybral človek."
+     ]
+    },
+    {
+     "type": "LINK",
+     "text": "spiritualsoundspace.com",
+     "url": "https://spiritualsoundspace.com"
+    },
+    {
+     "type": "LINK",
+     "text": "spiritualsound.space",
+     "url": "https://spiritualsound.space"
+    }
+   ],
+   "label": "Ukážka",
+   "title": "Z našej vlastnej práce"
+  },
+  {
+   "id": "12",
+   "items": [
+    {
+     "type": "CARD",
+     "parts": [
+      "Hodnotenie",
+      "Koho prácu hodnotíme?",
+      "Bhakti-šástrí a vyššie kvalifikácie závisia od porozumenia študentov. Samotná esej nemusí preukázať, kto ju napísal."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Štýl",
+      "Plynulosť nie je dôkaz",
+      "Hladký text, opakované formulácie a čítanie nahlas môžu vyvolať otázky. AI dokáže napodobniť aj nevyrovnaný štýl a úmyselné chyby."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Nástroje",
+      "Detektory potrebujú kontrolu človekom",
+      "Pangram a GPTZero môžu text označiť. Dochádza k falošne pozitívnym výsledkom aj k prehliadnutému textu z AI. Skóre alebo skrytý prompt nie sú dostatočným dôkazom."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Naše kurzy",
+      "Dôkazy o učení",
+      "Ústna obhajoba, koncepty a práca pod dohľadom pomáhajú posúdiť porozumenie. Vedúci kurzov by mali stanoviť, aké používanie AI je povolené a ako sa má uvádzať."
+     ]
+    },
+    {
+     "type": "BAND",
+     "text": "Kde je hranica pre naše vlastné kurzy a kto ju určí?"
+    }
+   ],
+   "label": "Otázka, ktorá patrí nám",
+   "title": "AI vo vzdelávaní oddaných"
+  },
+  {
+   "id": "13",
+   "items": [
+    {
+     "type": "CARD",
+     "parts": [
+      "Deň",
+      "Práca stráca hranice",
+      "Predplatné kupuje kapacitu a kapacita láka k ďalším hodinám. Ranný program, džapa a odpočinok sú prvé, čo si tieto hodiny vezmú."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Myseľ",
+      "Práca sa presúva do hlavy",
+      "Menej mechanickej práce, viac špecifikovania, posudzovania a kontroly. To je ťažší druh únavy a ľahko ju u seba prehliadneme."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Srdce",
+      "Pripútanosť bez človeka",
+      "Aplikácie virtuálnych spoločníkov odpovedajú vľúdne v ktorúkoľvek hodinu a najviac sú im vystavení mladí. Poskytovatelia po vážnych prípadoch pridali ochranné opatrenia; príťažlivosť zostáva."
+     ]
+    },
+    {
+     "type": "BAND",
+     "text": "Staráme sa o oddaných. Ich pozornosť a ich denná sádhana sú súčasťou tejto starostlivosti."
+    }
+   ],
+   "label": "Ľudská stránka",
+   "title": "Čo to stojí človeka"
+  },
+  {
+   "id": "14",
+   "items": [
+    {
+     "type": "QUESTION",
+     "text": "1. Obraz, hlas a podoba: Smie ktokoľvek generovať obraz, hlas alebo video Šrílu Prabhupádu alebo oddaného? Mal by nástroj, ktorý odpovedá v jeho podobe, vôbec existovať?"
+    },
+    {
+     "type": "QUESTION",
+     "text": "2. Naše vzdelávanie: Je používanie AI v esejach a na skúškach povolené, a v akom rozsahu?"
+    },
+    {
+     "type": "QUESTION",
+     "text": "3. Výskum: Ako ďaleko smie AI zájsť v štúdiách a prieskumoch, ktoré zadávame?"
+    },
+    {
+     "type": "QUESTION",
+     "text": "4. Údaje o oddaných: Čo sa nikdy nesmie zadať do verejného nástroja?"
+    },
+    {
+     "type": "QUESTION",
+     "text": "5. Vlastníctvo zásad: Ktoré zásady už existujú celosvetovo, v Európe a v každej játre? Kto zodpovedá za medzery?"
+    },
+    {
+     "type": "QUESTION",
+     "text": "6. Zodpovednosť: Kto nesie zodpovednosť, keď AI v mene ISKCONu zlyhá?"
+    },
+    {
+     "type": "BAND",
+     "text": "Tieto otázky potrebujú menovite určených zodpovedných a dohodnutý postup rozhodovania."
+    }
+   ],
+   "label": "Na diskusiu pri stoloch",
+   "title": "Šesť otázok pre túto sálu"
+  },
+  {
+   "id": "15",
+   "items": [
+    {
+     "type": "TEXT",
+     "text": "ELM žiada RGB o začatie práce na zásadách pre AI v Európe."
+    },
+    {
+     "type": "TEXT",
+     "text": "Pitambara dás · Madayanti Mataji · prestávka · diskusia s celou sálou"
+    }
+   ],
+   "label": "Čo žiada toto zasadnutie",
+   "title": "Žiadosť o začatie práce na zásadách"
+  },
+  {
+   "id": "16",
+   "items": [
+    {
+     "type": "TEXT",
+     "text": "Pri používaní dokumentu skontrolujte dátum verzie."
+    },
+    {
+     "type": "LINK",
+     "text": "Snímky prvej časti",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/files/ELM-AI-presentation-v34.pdf"
+    },
+    {
+     "type": "LINK",
+     "text": "Návrh Zákonníka",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/"
+    },
+    {
+     "type": "LINK",
+     "text": "Manifest korpusu",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/files/notebooklm-corpus-MANIFEST.md"
+    },
+    {
+     "type": "LINK",
+     "text": "Ukážková správa o kontrole kvality",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/files/qa-report-sample.html"
+    },
+    {
+     "type": "LINK",
+     "text": "Prompt",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/files/prompt-translation-check.txt"
+    },
+    {
+     "type": "LINK",
+     "text": "Stanford HAI, The 2026 AI Index Report",
+     "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report"
+    },
+    {
+     "type": "LINK",
+     "text": "Virtuous, 2026 Nonprofit AI Adoption Report",
+     "url": "https://539405.fs1.hubspotusercontent-na1.net/hubfs/539405/AI%20Report/Virtuous%202026%20Nonprofit%20AI%20Adoption%20Report.pdf"
+    },
+    {
+     "type": "LINK",
+     "text": "NIST AI 600-1, Generative AI Profile",
+     "url": "https://doi.org/10.6028/NIST.AI.600-1"
+    },
+    {
+     "type": "LINK",
+     "text": "NIST, hašovacia funkcia",
+     "url": "https://csrc.nist.gov/glossary/term/hash_function"
+    },
+    {
+     "type": "LINK",
+     "text": "NIST, digitálny podpis",
+     "url": "https://csrc.nist.gov/glossary/term/digital_signature"
+    },
+    {
+     "type": "LINK",
+     "text": "C2PA, Content Credentials",
+     "url": "https://spec.c2pa.org/specifications/specifications/2.2/explainer/Explainer.html"
+    },
+    {
+     "type": "LINK",
+     "text": "YouTube, Content ID",
+     "url": "https://support.google.com/youtube/answer/2797370?hl=en"
+    },
+    {
+     "type": "LINK",
+     "text": "Európska komisia, článok 50 aktu o umelej inteligencii",
+     "url": "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act"
+    },
+    {
+     "type": "LINK",
+     "text": "arxiv.org/abs/2304.02819",
+     "url": "https://arxiv.org/abs/2304.02819"
+    },
+    {
+     "type": "LINK",
+     "text": "arxiv.org/abs/2602.05769",
+     "url": "https://arxiv.org/abs/2602.05769"
+    },
+    {
+     "type": "LINK",
+     "text": "Common Sense Media, ochranné opatrenia AI pre deti, 2026",
+     "url": "https://www.commonsensemedia.org/sites/default/files/featured-content/files/justification-for-ai-safeguards-for-kids-2026.pdf"
+    },
+    {
+     "type": "LINK",
+     "text": "Prvá verzia tejto stránky",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/"
+    }
+   ],
+   "label": "Zdroje zo zasadnutia",
+   "title": "Zdroje z dnešného zasadnutia"
+  }
+ ]
+}

@@ -1,0 +1,730 @@
+{
+ "lang": "da",
+ "ui": {
+  "notice": "Maskinoversættelse ved hjælp af AI, lavet live under sessionen. Ikke gennemgået af et menneske. Den engelske tekst er referencen.",
+  "language": "Sprog",
+  "slide": "Dias",
+  "source": "Kilde",
+  "open": "Åbn",
+  "first_version": "Den første version af denne side",
+  "video_note": "Demonstrationsvideoen vises kun i salen og offentliggøres ikke."
+ },
+ "slides": [
+  {
+   "id": "01",
+   "items": [
+    {
+     "type": "TEXT",
+     "text": "Europæisk ledermøde · 2026"
+    },
+    {
+     "type": "TEXT",
+     "text": "AI for ISKCON's ledelse"
+    },
+    {
+     "type": "TEXT",
+     "text": "Ledelse, styring og anvendelse i organisationen"
+    },
+    {
+     "type": "TEXT",
+     "text": "Del et af to · New Mayapur, Frankrig · 26.–27. september 2026 · oplægsholder Pitambara dasa"
+    }
+   ]
+  },
+  {
+   "id": "02",
+   "items": [
+    {
+     "type": "STAT",
+     "value": "88%",
+     "text": "af de adspurgte organisationer oplyser, at de bruger AI i mindst én forretningsfunktion",
+     "source": "Stanford AI Index 2026 · tallet for udbredelse via McKinsey"
+    },
+    {
+     "type": "STAT",
+     "value": "362",
+     "text": "AI-hændelser registreret i 2025 mod 233 i 2024",
+     "source": "Stanford AI Index 2026"
+    },
+    {
+     "type": "STAT",
+     "value": "7%",
+     "text": "af de adspurgte nonprofitorganisationer oplyser om store gevinster i kapacitet og strategiske prioriteter",
+     "source": "Virtuous-rapport 2026 · 346 nonprofitorganisationer"
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Kløften",
+      "Brugen er udbredt. Målt gavn og kontrol er sjældne."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Situationen",
+      "Den kommer ind gennem e-mail, dokumenter, søgning og mødeværktøjer, uden at nogen har besluttet at tage den i brug."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Konsekvensen",
+      "Hvis der ikke findes en politik, opfinder medarbejderne selv en."
+     ]
+    }
+   ],
+   "label": "Ledelse og organisation",
+   "title": "AI er allerede inde i organisationen"
+  },
+  {
+   "id": "03",
+   "items": [
+    {
+     "type": "CARD",
+     "parts": [
+      "Fuld kontrol",
+      "Tilladelsen er den egentlige indstilling",
+      "Med adgang kan en assistent åbne, ændre og slette filer, sende beskeder og nå forbundne systemer. Den konto, den låner, afgør, hvor langt den rækker."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Uden opsyn",
+      "Ingen holder øje",
+      "Får den lov at køre alene, fortsætter den forbi sin første fejl. En forkert instruktion, der gentages hurtigt, er sværere at gøre ugjort end en forkert sætning."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Grænsen",
+      "Grænserne aftales først",
+      "Beslut på forhånd, hvilke handlinger der kræver bekræftelse, hvilke oplysninger der holdes ude, og hvem der kan stoppe en kørsel, der er gået i gang."
+     ]
+    },
+    {
+     "type": "BAND",
+     "text": "Én autoriseret assistent rækker længere end én persons skrivebord. Dens grænser aftales, før opgaven begynder."
+    }
+   ],
+   "label": "Risiko, vi bærer",
+   "title": "Når assistenten kan handle"
+  },
+  {
+   "id": "04",
+   "items": [
+    {
+     "type": "TEXT",
+     "text": "Hver anvendelse kræver en person, der kontrollerer resultatet og påtager sig ansvaret."
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Område",
+      "Hvad vi vinder",
+      "Risiko uden gennemgang"
+     ]
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Udkast",
+      "Hurtigere breve, referater og rapporter",
+      "Ikke-gennemgåede beskeder sendt i vores navn"
+     ]
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Sprog",
+      "Udkast på flere sprog",
+      "Fejl i betydning og terminologi"
+     ]
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Hukommelse",
+      "Søgbare resolutioner og optegnelser",
+      "Opdigtede citater og forkerte henvisninger"
+     ]
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Analyse",
+      "Hurtigere research og sammenligning",
+      "Udokumenterede konklusioner, der lyder sikre"
+     ]
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Kapacitet",
+      "Mere tid til omsorg for hengivne og til tjeneste",
+      "Færre muligheder for at oplære efterfølgere"
+     ]
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Stemme",
+      "Lettere adgang til optagelser og tekster",
+      "Opdigtede ord i en velkendt stemme"
+     ]
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Leverandører",
+      "Formåen, vi ikke selv behøver at opbygge",
+      "Afhængighed af få udbydere og deres vilkår"
+     ]
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Regler",
+      "Klare forventninger, når de først er fastlagt",
+      "Kravene i Europa ændrer sig fortsat alt efter anvendelsesområde"
+     ]
+    }
+   ],
+   "label": "Fordele og omkostninger",
+   "title": "Fordele og risici ved AI i vores arbejde"
+  },
+  {
+   "id": "05",
+   "items": [
+    {
+     "type": "TEXT",
+     "text": "En mærket AI-demonstration afspilles her i salen: et velkendt ansigt og en velkendt stemme, der siger ord, som aldrig blev sagt. Optagelsen offentliggøres ikke. Tilladelsen fra BBT gælder kun for salen."
+    },
+    {
+     "type": "TEXT",
+     "text": "Pointen med den: Et genkendeligt ansigt og en genkendelig stemme fastslår ikke i sig selv, hvor ordene kom fra. Det næste dias viser, hvad der kan gøres ved det."
+    }
+   ],
+   "label": "Demonstration",
+   "title": "Hvis stemme er det?"
+  },
+  {
+   "id": "06",
+   "items": [
+    {
+     "type": "CARD",
+     "parts": [
+      "Digitale profiler og signaturer",
+      "En digital profil for hver fil",
+      "Registrér for hver original kildeoplysningerne og filens hashværdi. BBT Archive kan signere registreringen digitalt. Et kontrolværktøj sammenligner derefter hashværdien og verificerer signaturen."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Kontrol af citater",
+      "AI finder kilden",
+      "AI finder præcise passager og sammenhæng i BBT Archive. Et citat, der ikke findes efter en fuld kontrol, er mistænkeligt. Lighed i stemmen alene kan ikke godtgøre, at en optagelse er ægte."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Det forudgående spørgsmål",
+      "Bør et sådant værktøj findes?",
+      "Før vi spørger, om en »spørg Prabhupāda«-tjeneste svarer korrekt, må vi spørge, om den bør findes. Et syntetiseret svar i hans person er ikke hans instruktion, og hengivne hører måske ikke forskel."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Platforme og lovgivning",
+      "Platformenes tiltag og juridiske rettigheder",
+      "Content ID matcher genbrugte optagelser. Rettighedshavere kan forfølge krænkelser. EU-regler kræver oplysning om omfattede deepfakes."
+     ]
+    },
+    {
+     "type": "BAND",
+     "text": "Godkendte værktøjer bør henvise til Arkivet og adskille citat fra resumé. Om et personificeret værktøj overhovedet er tilladt, er en særskilt beslutning."
+    }
+   ],
+   "label": "Ægthed og bevis",
+   "title": "Digital verifikation af billeder, lyd og video"
+  },
+  {
+   "id": "07",
+   "items": [
+    {
+     "type": "CARD",
+     "parts": [
+      "Vores arbejdsgang",
+      "Menneskelig oversættelse først",
+      "Et færdigt kapitel fra en menneskelig oversætter, med normalt redaktionelt arbejde. De fastlagte kontroller køres bagefter, aldrig i stedet."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Hvad kontrollerne fandt",
+      "Tolv titler, omkring 2.000 fund",
+      "Fundene er ordnet efter alvor. Redaktøren accepterer eller afviser hvert enkelt, og de bekræftede fejl er færre."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Det største tilfælde",
+      "913.000 linjer, 50.000 rettelser",
+      "En bulgarsk orddelingsordbog. Manuelt, to timer om dagen i tre år. Med disse kontroller, to timer om dagen i tre uger."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Præcedensen",
+      "Værktøjerne har ændret sig før",
+      "Hans Guru Mahārāja kaldte trykkepressen for bṛhad-mṛdaṅga, den store tromme. Han dikterede disse bøger ind i en maskine. Værktøjerne ændrede sig; ansvaret gjorde ikke."
+     ]
+    },
+    {
+     "type": "BAND",
+     "text": "Maskinen finder. Redaktøren beslutter."
+    },
+    {
+     "type": "LINK",
+     "text": "Eksempelrapport: diakritikkontrollen af Śrī Īśopaniṣad",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/files/qa-report-sample.html"
+    },
+    {
+     "type": "LINK",
+     "text": "Prompten bag betydningskontrollen",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/files/prompt-translation-check.txt"
+    }
+   ],
+   "label": "Internt eksempel",
+   "title": "AI-kontroller i vores bogproduktion"
+  },
+  {
+   "id": "08",
+   "items": [
+    {
+     "type": "STEP",
+     "text": "En forberedt demosamling. 50 filer med omkring 23 millioner ord, forberedt til denne demonstration. Manifestet beskriver denne samlings omfang."
+    },
+    {
+     "type": "STEP",
+     "text": "Ét spørgsmål, stillet præcist. »Hvad sagde han om børn« giver tusind udsagn. Et afgrænset spørgsmål giver en passage, vi kan åbne og læse."
+    },
+    {
+     "type": "STEP",
+     "text": "Henvisninger, vi kan efterprøve. Åbn det citerede vers, brev eller udskrift. Læs den omgivende passage, og skeln mellem citater og modellens resumé."
+    },
+    {
+     "type": "BAND",
+     "text": "Denne demo illustrerer kildekontrol. BBT Archive er fortsat referencen."
+    },
+    {
+     "type": "LINK",
+     "text": "Korpusmanifestet",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/files/notebooklm-corpus-MANIFEST.md"
+    }
+   ],
+   "label": "Demonstration",
+   "title": "Spørgsmål besvaret med kildehenvisninger"
+  },
+  {
+   "id": "09",
+   "items": [
+    {
+     "type": "TRY",
+     "label": "Prøv at søge",
+     "terms_en": [
+      "succession",
+      "child protection",
+      "temple president",
+      "zonal secretary",
+      "sannyasa",
+      "dispute",
+      "trustee",
+      "vyasa-puja"
+     ]
+    },
+    {
+     "type": "STEP",
+     "text": "Bestilt i 1995. En GBC-resolution fra 1995 opfordrede til en samlet Law Book. Denne demonstration bruger 2018-udgaven som udgangspunkt."
+    },
+    {
+     "type": "STEP",
+     "text": "Samlet på én nat. Offentliggjorte resolutioner fra 2019 til 2026, ordnet under bogens kapitler, med henvisninger til kildedokumenterne."
+    },
+    {
+     "type": "STEP",
+     "text": "Et udkast og intet andet. Et ikke-godkendt arbejdsudkast. Et autoriseret udvalg skal gennemgå, hvilke bestemmelser der fortsat er gældende, og løse modstrid."
+    },
+    {
+     "type": "BAND",
+     "text": "422 sider med søgning og kildelinks. Juridisk og institutionel gennemgang har stadig betydning."
+    },
+    {
+     "type": "LINK",
+     "text": "succession",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=succession",
+     "keep_en": true
+    },
+    {
+     "type": "LINK",
+     "text": "child protection",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=child%20protection",
+     "keep_en": true
+    },
+    {
+     "type": "LINK",
+     "text": "temple president",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=temple%20president",
+     "keep_en": true
+    },
+    {
+     "type": "LINK",
+     "text": "zonal secretary",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=zonal%20secretary",
+     "keep_en": true
+    },
+    {
+     "type": "LINK",
+     "text": "sannyasa",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=sannyasa",
+     "keep_en": true
+    },
+    {
+     "type": "LINK",
+     "text": "dispute",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=dispute",
+     "keep_en": true
+    },
+    {
+     "type": "LINK",
+     "text": "trustee",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=trustee",
+     "keep_en": true
+    },
+    {
+     "type": "LINK",
+     "text": "vyasa-puja",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=vyasa-puja",
+     "keep_en": true
+    },
+    {
+     "type": "LINK",
+     "text": "Åbn det nu · haripetrov-stack.github.io/iskcon-law-book",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/"
+    },
+    {
+     "type": "LINK",
+     "text": "Det samme udkast som PDF",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/iskcon-law-draft-2018-2026.pdf"
+    }
+   ],
+   "label": "Demonstration",
+   "title": "Et søgbart udkast til ISKCON Law Book"
+  },
+  {
+   "id": "10",
+   "items": [
+    {
+     "type": "CARD",
+     "parts": [
+      "Svag",
+      "Kort, generisk prompt",
+      "»Sammenlign bulgarsk oversættelse og engelsk.« Svaret kunne høre til hvad som helst og kasseres."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Stærk",
+      "En defineret opgave",
+      "»Du kontrollerer en færdig bulgarsk oversættelse mod den engelske original. Begge filer er vedhæftet. Angiv kun de steder, hvor betydningen afviger: det engelske, det bulgarske og årsagen, i en tabel. Ændr intet andet.«"
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "De fire dele",
+      "Rolle, materiale, opgave, form",
+      "Hvem den er. Hvad den har foran sig. Hvad der ønskes. I hvilken form."
+     ]
+    },
+    {
+     "type": "BAND",
+     "text": "En brugbar prompt angiver rollen, kildematerialet, opgaven og det krævede format."
+    },
+    {
+     "type": "LINK",
+     "text": "Prompten, klar til at tilpasse",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/files/prompt-translation-check.txt"
+    }
+   ],
+   "label": "Praktisk",
+   "title": "Sådan skriver man den prompt, der virker"
+  },
+  {
+   "id": "11",
+   "items": [
+    {
+     "type": "CARD",
+     "parts": [
+      "Live-demonstration",
+      "Voice Chat",
+      "Demonstrerer en god prompt: præcise instruktioner givet med stemmen."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Bygget på få dage",
+      "Måneders specialistarbejde",
+      "Sitestruktur, kode, sideskabeloner og batchbehandling af lydfilerne. En person valgte optagelserne, designet og tidspunktet for offentliggørelse."
+     ]
+    },
+    {
+     "type": "LINK",
+     "text": "spiritualsoundspace.com",
+     "url": "https://spiritualsoundspace.com"
+    },
+    {
+     "type": "LINK",
+     "text": "spiritualsound.space",
+     "url": "https://spiritualsound.space"
+    }
+   ],
+   "label": "Demonstration",
+   "title": "Fra vores eget arbejde"
+  },
+  {
+   "id": "12",
+   "items": [
+    {
+     "type": "CARD",
+     "parts": [
+      "Bedømmelsen",
+      "Hvis arbejde bedømmer vi?",
+      "Bhakti-śāstrī og højere kvalifikationer afhænger af de studerendes forståelse. Et essay alene fastslår ikke nødvendigvis, hvem der har skrevet det."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Stilen",
+      "Flydende sprog er ikke bevis",
+      "Glat prosa, gentagne formuleringer og oplæsning kan rejse spørgsmål. AI kan også efterligne en ujævn stil og bevidste fejl."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Værktøjerne",
+      "Detektorer kræver menneskelig gennemgang",
+      "Pangram og GPTZero kan markere tekst. Falske positiver og overset AI-tekst forekommer. En score eller en skjult prompt er ikke tilstrækkeligt bevis."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Vores kurser",
+      "Bevis for læring",
+      "Mundtligt forsvar, udkast og arbejde under opsyn hjælper med at vurdere forståelsen. Kursuslederne bør fastlægge tilladt brug af AI og oplysning om den."
+     ]
+    },
+    {
+     "type": "BAND",
+     "text": "Hvor går grænsen for vores egne kurser, og hvem trækker den?"
+    }
+   ],
+   "label": "Et spørgsmål, der er vores eget",
+   "title": "AI i undervisningen af hengivne"
+  },
+  {
+   "id": "13",
+   "items": [
+    {
+     "type": "CARD",
+     "parts": [
+      "Dagen",
+      "Arbejdet mister sine grænser",
+      "Et abonnement køber kapacitet, og kapacitet indbyder til flere timer. Morgenprogram, japa og hvile er det første, de timer tager."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Sindet",
+      "Arbejdet flytter ind i hovedet",
+      "Mindre mekanisk arbejde, mere specificering, vurdering og kontrol. Det er en tungere form for træthed, og den er let at overse hos os selv."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Hjertet",
+      "Tilknytning uden en person",
+      "Ledsagerapplikationer svarer varmt på alle tider af døgnet, og de unge er mest udsatte. Udbyderne indførte beskyttelse efter alvorlige sager; tiltrækningen består."
+     ]
+    },
+    {
+     "type": "BAND",
+     "text": "Vi drager omsorg for hengivne. Deres opmærksomhed og deres daglige sādhana er en del af den omsorg."
+    }
+   ],
+   "label": "Den menneskelige side",
+   "title": "Hvad det koster den enkelte"
+  },
+  {
+   "id": "14",
+   "items": [
+    {
+     "type": "QUESTION",
+     "text": "1. Billede, stemme og udseende: Må nogen generere billede, stemme eller video af Śrīla Prabhupāda eller af en hengiven? Bør et værktøj, der svarer i hans person, overhovedet findes?"
+    },
+    {
+     "type": "QUESTION",
+     "text": "2. Vores uddannelse: Er brug af AI tilladt i essays og eksamener, og i hvilket omfang?"
+    },
+    {
+     "type": "QUESTION",
+     "text": "3. Forskning: Hvor langt må AI gå i de studier og spørgeundersøgelser, vi bestiller?"
+    },
+    {
+     "type": "QUESTION",
+     "text": "4. Data om hengivne: Hvad må aldrig indtastes i et offentligt værktøj?"
+    },
+    {
+     "type": "QUESTION",
+     "text": "5. Ejerskab af politikker: Hvilke politikker findes der allerede globalt, i Europa og i hver yatra? Hvem er ansvarlig for hullerne?"
+    },
+    {
+     "type": "QUESTION",
+     "text": "6. Ansvarlighed: Hvem er ansvarlig, når AI fejler i ISKCON's navn?"
+    },
+    {
+     "type": "BAND",
+     "text": "Disse spørgsmål kræver navngivne ansvarlige og en aftalt proces for beslutninger."
+    }
+   ],
+   "label": "Til bordene",
+   "title": "Seks spørgsmål til denne sal"
+  },
+  {
+   "id": "15",
+   "items": [
+    {
+     "type": "TEXT",
+     "text": "ELM beder RGB om at begynde arbejdet på en AI-politik for Europa."
+    },
+    {
+     "type": "TEXT",
+     "text": "Pitambara dasa · Madayanti Mataji · pause · diskussion med hele salen"
+    }
+   ],
+   "label": "Hvad denne session beder om",
+   "title": "En anmodning om at begynde politikarbejdet"
+  },
+  {
+   "id": "16",
+   "items": [
+    {
+     "type": "TEXT",
+     "text": "Tjek versionsdatoen, når du bruger et dokument."
+    },
+    {
+     "type": "LINK",
+     "text": "Diasene fra del et",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/files/ELM-AI-presentation-v34.pdf"
+    },
+    {
+     "type": "LINK",
+     "text": "Udkastet til Law Book",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/"
+    },
+    {
+     "type": "LINK",
+     "text": "Korpusmanifestet",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/files/notebooklm-corpus-MANIFEST.md"
+    },
+    {
+     "type": "LINK",
+     "text": "Eksempel på QA-rapport",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/files/qa-report-sample.html"
+    },
+    {
+     "type": "LINK",
+     "text": "Prompten",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/files/prompt-translation-check.txt"
+    },
+    {
+     "type": "LINK",
+     "text": "Stanford HAI, The 2026 AI Index Report",
+     "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report"
+    },
+    {
+     "type": "LINK",
+     "text": "Virtuous, 2026 Nonprofit AI Adoption Report",
+     "url": "https://539405.fs1.hubspotusercontent-na1.net/hubfs/539405/AI%20Report/Virtuous%202026%20Nonprofit%20AI%20Adoption%20Report.pdf"
+    },
+    {
+     "type": "LINK",
+     "text": "NIST AI 600-1, Generative AI Profile",
+     "url": "https://doi.org/10.6028/NIST.AI.600-1"
+    },
+    {
+     "type": "LINK",
+     "text": "NIST, hashfunktion",
+     "url": "https://csrc.nist.gov/glossary/term/hash_function"
+    },
+    {
+     "type": "LINK",
+     "text": "NIST, digital signatur",
+     "url": "https://csrc.nist.gov/glossary/term/digital_signature"
+    },
+    {
+     "type": "LINK",
+     "text": "C2PA, Content Credentials",
+     "url": "https://spec.c2pa.org/specifications/specifications/2.2/explainer/Explainer.html"
+    },
+    {
+     "type": "LINK",
+     "text": "YouTube, Content ID",
+     "url": "https://support.google.com/youtube/answer/2797370?hl=en"
+    },
+    {
+     "type": "LINK",
+     "text": "Europa-Kommissionen, artikel 50 i AI-forordningen",
+     "url": "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act"
+    },
+    {
+     "type": "LINK",
+     "text": "arxiv.org/abs/2304.02819",
+     "url": "https://arxiv.org/abs/2304.02819"
+    },
+    {
+     "type": "LINK",
+     "text": "arxiv.org/abs/2602.05769",
+     "url": "https://arxiv.org/abs/2602.05769"
+    },
+    {
+     "type": "LINK",
+     "text": "Common Sense Media, AI-sikkerhedsforanstaltninger for børn, 2026",
+     "url": "https://www.commonsensemedia.org/sites/default/files/featured-content/files/justification-for-ai-safeguards-for-kids-2026.pdf"
+    },
+    {
+     "type": "LINK",
+     "text": "Den første version af denne side",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/"
+    }
+   ],
+   "label": "Ressourcer fra sessionen",
+   "title": "Ressourcer fra dagens session"
+  }
+ ]
+}

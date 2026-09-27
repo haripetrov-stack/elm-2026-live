@@ -1,0 +1,730 @@
+{
+ "lang": "es",
+ "ui": {
+  "notice": "Traducción automática realizada por IA en directo durante la sesión. No ha sido revisada por una persona. El texto en inglés es la referencia.",
+  "language": "Idioma",
+  "slide": "Diapositiva",
+  "source": "Fuente",
+  "open": "Abrir",
+  "first_version": "La primera versión de esta página",
+  "video_note": "El vídeo de demostración se muestra solo en la sala y no se publica."
+ },
+ "slides": [
+  {
+   "id": "01",
+   "items": [
+    {
+     "type": "TEXT",
+     "text": "Reunión Europea de Liderazgo · 2026"
+    },
+    {
+     "type": "TEXT",
+     "text": "IA para el liderazgo de ISKCON"
+    },
+    {
+     "type": "TEXT",
+     "text": "Liderazgo, gobernanza y aplicación organizativa"
+    },
+    {
+     "type": "TEXT",
+     "text": "Primera parte de dos · Nueva Mayapur, Francia · 26-27 de septiembre de 2026 · ponente: Pitambara dasa"
+    }
+   ]
+  },
+  {
+   "id": "02",
+   "items": [
+    {
+     "type": "STAT",
+     "value": "88%",
+     "text": "de las organizaciones encuestadas declaran usar la IA en al menos una función de negocio",
+     "source": "Stanford AI Index 2026 · cifra de adopción a través de McKinsey"
+    },
+    {
+     "type": "STAT",
+     "value": "362",
+     "text": "incidentes de IA registrados en 2025, frente a 233 en 2024",
+     "source": "Stanford AI Index 2026"
+    },
+    {
+     "type": "STAT",
+     "value": "7%",
+     "text": "de las organizaciones sin ánimo de lucro encuestadas declaran avances importantes en capacidad y en prioridades estratégicas",
+     "source": "Informe Virtuous 2026 · 346 organizaciones sin ánimo de lucro"
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "La brecha",
+      "El uso es habitual. El beneficio medido y el control son escasos."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "La condición",
+      "Llega a través del correo electrónico, los documentos, la búsqueda y las herramientas de reuniones, sin que nadie decida adoptarla."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "La consecuencia",
+      "Si no existe una política, el personal inventa una."
+     ]
+    }
+   ],
+   "label": "Liderazgo y organización",
+   "title": "La IA ya está dentro de la organización"
+  },
+  {
+   "id": "03",
+   "items": [
+    {
+     "type": "CARD",
+     "parts": [
+      "Control total",
+      "El permiso es el verdadero ajuste",
+      "Con acceso, un asistente puede abrir, modificar y eliminar archivos, enviar mensajes y llegar a los sistemas conectados. La cuenta que toma prestada determina hasta dónde llega."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Sin supervisión",
+      "Nadie está mirando",
+      "Si se le deja funcionar solo, continúa más allá de su primer error. Una instrucción errónea repetida con rapidez es más difícil de deshacer que una frase errónea."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "El límite",
+      "Los límites se acuerdan primero",
+      "Decidir de antemano qué acciones necesitan confirmación, qué información queda fuera y quién puede detener una ejecución que ya ha comenzado."
+     ]
+    },
+    {
+     "type": "BAND",
+     "text": "Un solo asistente autorizado llega más lejos que el escritorio de una persona. Sus límites se acuerdan antes de que comience la tarea."
+    }
+   ],
+   "label": "El riesgo que asumimos",
+   "title": "Cuando el asistente puede actuar"
+  },
+  {
+   "id": "04",
+   "items": [
+    {
+     "type": "TEXT",
+     "text": "Cada uso necesita a alguien que revise el resultado y asuma la responsabilidad."
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Área",
+      "Lo que ganamos",
+      "Riesgo sin revisión"
+     ]
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Redacción",
+      "Cartas, actas e informes más rápidos",
+      "Mensajes no revisados enviados en nuestro nombre"
+     ]
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Idioma",
+      "Borradores en más idiomas",
+      "Errores de sentido y de terminología"
+     ]
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Memoria",
+      "Resoluciones y registros en los que se puede buscar",
+      "Citas inventadas y referencias erróneas"
+     ]
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Análisis",
+      "Investigación y comparación más rápidas",
+      "Conclusiones sin fundamento que suenan seguras"
+     ]
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Capacidad",
+      "Más tiempo para el cuidado de los devotos y el servicio",
+      "Menos oportunidades de formar a los sucesores"
+     ]
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Voz",
+      "Acceso más fácil a grabaciones y textos",
+      "Palabras inventadas con una voz conocida"
+     ]
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Proveedores",
+      "Capacidades que no tenemos que desarrollar",
+      "Dependencia de unos pocos proveedores y de sus condiciones"
+     ]
+    },
+    {
+     "type": "ROW",
+     "parts": [
+      "Normas",
+      "Expectativas claras una vez establecidas",
+      "Los requisitos en Europa siguen cambiando según el caso de uso"
+     ]
+    }
+   ],
+   "label": "Beneficios y costes",
+   "title": "Beneficios y riesgos de la IA en nuestro trabajo"
+  },
+  {
+   "id": "05",
+   "items": [
+    {
+     "type": "TEXT",
+     "text": "Aquí, en la sala, se reproduce una demostración de IA etiquetada como tal: un rostro conocido y una voz conocida que dicen palabras que nunca se pronunciaron. La grabación no se publica. El permiso del BBT cubre solo la sala."
+    },
+    {
+     "type": "TEXT",
+     "text": "Lo que muestra: un rostro reconocible y una voz reconocible no establecen por sí mismos de dónde proceden las palabras. La siguiente diapositiva muestra qué se puede hacer al respecto."
+    }
+   ],
+   "label": "Demostración",
+   "title": "¿De quién es la voz?"
+  },
+  {
+   "id": "06",
+   "items": [
+    {
+     "type": "CARD",
+     "parts": [
+      "Perfiles y firmas digitales",
+      "Un perfil digital para cada archivo",
+      "Registrar los datos de origen y el hash de cada archivo original. El BBT Archive puede firmar digitalmente el registro. Después, una herramienta de verificación compara el hash y verifica la firma."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Verificación de citas",
+      "La IA encuentra la fuente",
+      "La IA encuentra los pasajes exactos y su contexto en el BBT Archive. Una cita que no aparece tras una verificación completa es sospechosa. La similitud de la voz por sí sola no puede autenticar una grabación."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "La cuestión previa",
+      "¿Debería existir una herramienta así?",
+      "Antes de preguntarnos si un servicio de «pregunta a Prabhupāda» responde con exactitud, debemos preguntarnos si debería existir. Una respuesta sintetizada en su persona no es su instrucción, y puede que los devotos no perciban la diferencia."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Plataformas y derecho",
+      "Medidas de las plataformas y derechos legales",
+      "Content ID detecta coincidencias con grabaciones reutilizadas. Los titulares de derechos pueden perseguir las infracciones. Las normas de la UE exigen revelar los deepfakes incluidos en su ámbito."
+     ]
+    },
+    {
+     "type": "BAND",
+     "text": "Las herramientas aprobadas deberían citar el Archivo y separar la cita del resumen. Si se permite o no una herramienta personificada es una decisión aparte."
+    }
+   ],
+   "label": "Autenticidad y prueba",
+   "title": "Verificación digital de imágenes, audio y vídeo"
+  },
+  {
+   "id": "07",
+   "items": [
+    {
+     "type": "CARD",
+     "parts": [
+      "Nuestro flujo de trabajo",
+      "Primero, la traducción humana",
+      "Un capítulo terminado por un traductor humano, con el trabajo editorial habitual. Las verificaciones definidas se ejecutan después, nunca en su lugar."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Lo que encontraron las verificaciones",
+      "Doce títulos, unos 2.000 hallazgos",
+      "Los hallazgos se ordenan por gravedad. El editor acepta o rechaza cada uno, y los errores confirmados son menos."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "El caso más grande",
+      "913.000 líneas, 50.000 correcciones",
+      "Un diccionario búlgaro de separación silábica. A mano, dos horas al día durante tres años. Con estas verificaciones, dos horas al día durante tres semanas."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "El precedente",
+      "Las herramientas ya han cambiado antes",
+      "Su Guru Mahārāja llamó a la imprenta el bṛhad-mṛdaṅga, el gran tambor. Él dictó estos libros a una máquina. Las herramientas cambiaron; la responsabilidad no."
+     ]
+    },
+    {
+     "type": "BAND",
+     "text": "La máquina encuentra. El editor decide."
+    },
+    {
+     "type": "LINK",
+     "text": "Informe de muestra: la verificación de diacríticos de Śrī Īśopaniṣad",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/files/qa-report-sample.html"
+    },
+    {
+     "type": "LINK",
+     "text": "El prompt que hay detrás de la verificación del sentido",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/files/prompt-translation-check.txt"
+    }
+   ],
+   "label": "Caso interno",
+   "title": "Verificaciones con IA en nuestra producción de libros"
+  },
+  {
+   "id": "08",
+   "items": [
+    {
+     "type": "STEP",
+     "text": "Una colección de demostración preparada. 50 archivos con unos 23 millones de palabras, preparados para esta demostración. El manifiesto describe el alcance de esta colección."
+    },
+    {
+     "type": "STEP",
+     "text": "Una pregunta, formulada con precisión. «¿Qué dijo sobre los niños?» devuelve mil afirmaciones. Una pregunta definida devuelve un pasaje que podemos abrir y leer."
+    },
+    {
+     "type": "STEP",
+     "text": "Referencias que podemos comprobar. Abrir el verso, la carta o la transcripción citados. Leer el pasaje que los rodea y distinguir las citas del resumen del modelo."
+    },
+    {
+     "type": "BAND",
+     "text": "Esta demostración ilustra la verificación de fuentes. El BBT Archive sigue siendo la referencia."
+    },
+    {
+     "type": "LINK",
+     "text": "El manifiesto del corpus",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/files/notebooklm-corpus-MANIFEST.md"
+    }
+   ],
+   "label": "Demostración",
+   "title": "Preguntas respondidas con referencias a las fuentes"
+  },
+  {
+   "id": "09",
+   "items": [
+    {
+     "type": "TRY",
+     "label": "Pruebe a buscar",
+     "terms_en": [
+      "succession",
+      "child protection",
+      "temple president",
+      "zonal secretary",
+      "sannyasa",
+      "dispute",
+      "trustee",
+      "vyasa-puja"
+     ]
+    },
+    {
+     "type": "STEP",
+     "text": "Encargado en 1995. Una resolución del GBC de 1995 pidió un Libro de Leyes consolidado. Esta demostración toma como punto de partida la edición de 2018."
+    },
+    {
+     "type": "STEP",
+     "text": "Compilado en una noche. Resoluciones publicadas de 2019 a 2026, organizadas según los capítulos del libro, con referencias a los documentos de origen."
+    },
+    {
+     "type": "STEP",
+     "text": "Un borrador, y nada más. Un borrador de trabajo no aprobado. Un comité autorizado debe revisar qué disposiciones siguen vigentes y resolver los conflictos."
+    },
+    {
+     "type": "BAND",
+     "text": "422 páginas con búsqueda y enlaces a las fuentes. La revisión jurídica e institucional sigue siendo importante."
+    },
+    {
+     "type": "LINK",
+     "text": "succession",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=succession",
+     "keep_en": true
+    },
+    {
+     "type": "LINK",
+     "text": "child protection",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=child%20protection",
+     "keep_en": true
+    },
+    {
+     "type": "LINK",
+     "text": "temple president",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=temple%20president",
+     "keep_en": true
+    },
+    {
+     "type": "LINK",
+     "text": "zonal secretary",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=zonal%20secretary",
+     "keep_en": true
+    },
+    {
+     "type": "LINK",
+     "text": "sannyasa",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=sannyasa",
+     "keep_en": true
+    },
+    {
+     "type": "LINK",
+     "text": "dispute",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=dispute",
+     "keep_en": true
+    },
+    {
+     "type": "LINK",
+     "text": "trustee",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=trustee",
+     "keep_en": true
+    },
+    {
+     "type": "LINK",
+     "text": "vyasa-puja",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=vyasa-puja",
+     "keep_en": true
+    },
+    {
+     "type": "LINK",
+     "text": "Ábralo ahora · haripetrov-stack.github.io/iskcon-law-book",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/"
+    },
+    {
+     "type": "LINK",
+     "text": "El mismo borrador en PDF",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/iskcon-law-draft-2018-2026.pdf"
+    }
+   ],
+   "label": "Demostración",
+   "title": "Un borrador del Libro de Leyes de ISKCON en el que se puede buscar"
+  },
+  {
+   "id": "10",
+   "items": [
+    {
+     "type": "CARD",
+     "parts": [
+      "Débil",
+      "Prompt breve y genérico",
+      "«Compara la traducción búlgara y el inglés». La respuesta podría corresponder a cualquier cosa y se descarta."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Fuerte",
+      "Una tarea definida",
+      "«Estás revisando una traducción búlgara terminada frente al original inglés. Ambos archivos están adjuntos. Enumera solo los lugares donde el sentido difiere: el inglés, el búlgaro y el motivo, en una tabla. No cambies nada más»."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Las cuatro partes",
+      "Rol, material, tarea, formato",
+      "Quién es. Qué tiene delante. Qué se quiere. En qué formato."
+     ]
+    },
+    {
+     "type": "BAND",
+     "text": "Un prompt útil indica el rol, el material de origen, la tarea y el formato requerido."
+    },
+    {
+     "type": "LINK",
+     "text": "El prompt, listo para adaptar",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/files/prompt-translation-check.txt"
+    }
+   ],
+   "label": "Práctico",
+   "title": "Redactar el prompt que funciona"
+  },
+  {
+   "id": "11",
+   "items": [
+    {
+     "type": "CARD",
+     "parts": [
+      "Demostración en directo",
+      "Voice Chat",
+      "Muestra un buen prompt: instrucciones precisas, dadas por voz."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Construido en días",
+      "Meses de trabajo especializado",
+      "Estructura del sitio, código, plantillas de página y procesamiento por lotes de los archivos de audio. Una persona eligió las grabaciones, el diseño y el momento de publicar."
+     ]
+    },
+    {
+     "type": "LINK",
+     "text": "spiritualsoundspace.com",
+     "url": "https://spiritualsoundspace.com"
+    },
+    {
+     "type": "LINK",
+     "text": "spiritualsound.space",
+     "url": "https://spiritualsound.space"
+    }
+   ],
+   "label": "Demostración",
+   "title": "De nuestro propio trabajo"
+  },
+  {
+   "id": "12",
+   "items": [
+    {
+     "type": "CARD",
+     "parts": [
+      "La evaluación",
+      "¿El trabajo de quién estamos evaluando?",
+      "El Bhakti-śāstrī y las titulaciones superiores dependen de la comprensión de los estudiantes. Puede que un ensayo por sí solo no establezca quién lo escribió."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "El estilo",
+      "La fluidez no es una prueba",
+      "Una prosa pulida, las formulaciones repetidas y la lectura en voz alta pueden suscitar dudas. La IA también puede imitar un estilo desigual y errores deliberados."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Las herramientas",
+      "Los detectores necesitan revisión humana",
+      "Pangram y GPTZero pueden señalar un texto. Se producen falsos positivos y textos de IA no detectados. Una puntuación o un prompt oculto no son pruebas suficientes."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "Nuestros cursos",
+      "Pruebas del aprendizaje",
+      "La defensa oral, los borradores y el trabajo supervisado ayudan a evaluar la comprensión. Los responsables de los cursos deberían definir el uso permitido de la IA y su declaración."
+     ]
+    },
+    {
+     "type": "BAND",
+     "text": "¿Dónde está el límite para nuestros propios cursos, y quién lo traza?"
+    }
+   ],
+   "label": "Una pregunta que nos corresponde",
+   "title": "La IA en la educación de los devotos"
+  },
+  {
+   "id": "13",
+   "items": [
+    {
+     "type": "CARD",
+     "parts": [
+      "El día",
+      "El trabajo pierde sus límites",
+      "Una suscripción compra capacidad, y la capacidad invita a más horas. El programa de la mañana, el japa y el descanso son lo primero que esas horas se llevan."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "La mente",
+      "El trabajo se traslada a la cabeza",
+      "Menos trabajo mecánico, más especificar, juzgar y comprobar. Es un tipo de cansancio más pesado y es fácil no advertirlo en nosotros mismos."
+     ]
+    },
+    {
+     "type": "CARD",
+     "parts": [
+      "El corazón",
+      "Apego sin una persona",
+      "Las aplicaciones de compañía responden con calidez a cualquier hora, y los jóvenes son los más expuestos. Los proveedores añadieron protecciones tras casos graves; la atracción permanece."
+     ]
+    },
+    {
+     "type": "BAND",
+     "text": "Cuidamos de los devotos. Su atención y su sādhana diario forman parte de ese cuidado."
+    }
+   ],
+   "label": "El lado humano",
+   "title": "Lo que le cuesta a la persona"
+  },
+  {
+   "id": "14",
+   "items": [
+    {
+     "type": "QUESTION",
+     "text": "1. Imagen, voz y semejanza: ¿puede alguien generar la imagen, la voz o el vídeo de Śrīla Prabhupāda, o de un devoto? ¿Debería existir siquiera una herramienta que responda en su persona?"
+    },
+    {
+     "type": "QUESTION",
+     "text": "2. Nuestra educación: ¿está permitido el uso de la IA en ensayos y exámenes, y en qué medida?"
+    },
+    {
+     "type": "QUESTION",
+     "text": "3. Investigación: ¿hasta dónde puede llegar la IA en los estudios y las encuestas que encargamos?"
+    },
+    {
+     "type": "QUESTION",
+     "text": "4. Datos de los devotos: ¿qué no debe introducirse nunca en una herramienta pública?"
+    },
+    {
+     "type": "QUESTION",
+     "text": "5. Titularidad de las políticas: ¿qué políticas existen ya a nivel mundial, en Europa y en cada yatra? ¿Quién es responsable de las lagunas?"
+    },
+    {
+     "type": "QUESTION",
+     "text": "6. Rendición de cuentas: ¿quién es responsable cuando la IA falla en nombre de ISKCON?"
+    },
+    {
+     "type": "BAND",
+     "text": "Estas preguntas necesitan responsables designados y un proceso acordado para las decisiones."
+    }
+   ],
+   "label": "Para las mesas",
+   "title": "Seis preguntas para esta sala"
+  },
+  {
+   "id": "15",
+   "items": [
+    {
+     "type": "TEXT",
+     "text": "La ELM pide al RGB que comience a trabajar en una política de IA para Europa."
+    },
+    {
+     "type": "TEXT",
+     "text": "Pitambara dasa · Madayanti Mataji · pausa · debate con toda la sala"
+    }
+   ],
+   "label": "Lo que pide esta sesión",
+   "title": "Una solicitud para comenzar el trabajo sobre políticas"
+  },
+  {
+   "id": "16",
+   "items": [
+    {
+     "type": "TEXT",
+     "text": "Compruebe la fecha de la versión al usar un documento."
+    },
+    {
+     "type": "LINK",
+     "text": "Las diapositivas de la primera parte",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/files/ELM-AI-presentation-v34.pdf"
+    },
+    {
+     "type": "LINK",
+     "text": "El borrador del Libro de Leyes",
+     "url": "https://haripetrov-stack.github.io/iskcon-law-book/"
+    },
+    {
+     "type": "LINK",
+     "text": "El manifiesto del corpus",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/files/notebooklm-corpus-MANIFEST.md"
+    },
+    {
+     "type": "LINK",
+     "text": "Informe de control de calidad de muestra",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/files/qa-report-sample.html"
+    },
+    {
+     "type": "LINK",
+     "text": "El prompt",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/files/prompt-translation-check.txt"
+    },
+    {
+     "type": "LINK",
+     "text": "Stanford HAI, The 2026 AI Index Report",
+     "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report"
+    },
+    {
+     "type": "LINK",
+     "text": "Virtuous, 2026 Nonprofit AI Adoption Report",
+     "url": "https://539405.fs1.hubspotusercontent-na1.net/hubfs/539405/AI%20Report/Virtuous%202026%20Nonprofit%20AI%20Adoption%20Report.pdf"
+    },
+    {
+     "type": "LINK",
+     "text": "NIST AI 600-1, Generative AI Profile",
+     "url": "https://doi.org/10.6028/NIST.AI.600-1"
+    },
+    {
+     "type": "LINK",
+     "text": "NIST, función hash",
+     "url": "https://csrc.nist.gov/glossary/term/hash_function"
+    },
+    {
+     "type": "LINK",
+     "text": "NIST, firma digital",
+     "url": "https://csrc.nist.gov/glossary/term/digital_signature"
+    },
+    {
+     "type": "LINK",
+     "text": "C2PA, Content Credentials",
+     "url": "https://spec.c2pa.org/specifications/specifications/2.2/explainer/Explainer.html"
+    },
+    {
+     "type": "LINK",
+     "text": "YouTube, Content ID",
+     "url": "https://support.google.com/youtube/answer/2797370?hl=en"
+    },
+    {
+     "type": "LINK",
+     "text": "Comisión Europea, artículo 50 del Reglamento de Inteligencia Artificial",
+     "url": "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act"
+    },
+    {
+     "type": "LINK",
+     "text": "arxiv.org/abs/2304.02819",
+     "url": "https://arxiv.org/abs/2304.02819"
+    },
+    {
+     "type": "LINK",
+     "text": "arxiv.org/abs/2602.05769",
+     "url": "https://arxiv.org/abs/2602.05769"
+    },
+    {
+     "type": "LINK",
+     "text": "Common Sense Media, salvaguardas de IA para niños, 2026",
+     "url": "https://www.commonsensemedia.org/sites/default/files/featured-content/files/justification-for-ai-safeguards-for-kids-2026.pdf"
+    },
+    {
+     "type": "LINK",
+     "text": "La primera versión de esta página",
+     "url": "https://haripetrov-stack.github.io/elm-2026-site/"
+    }
+   ],
+   "label": "Recursos de la sesión",
+   "title": "Recursos de la sesión de hoy"
+  }
+ ]
+}
