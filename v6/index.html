@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI for ISKCON Leadership</title>
+<meta name="description" content="European Leadership Meeting · 2026. Leadership, governance and organisational application.">
+<meta name="theme-color" content="#0F1E19">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@80..100,500..800&family=Geist:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="world" id="world">
+
+  <div class="terrain" aria-hidden="true">
+    <svg class="topo topo--dim" xmlns="http://www.w3.org/2000/svg"><path id="topo-lines" fill="none"/></svg>
+    <svg class="topo topo--lit" xmlns="http://www.w3.org/2000/svg"><use href="#topo-lines"/></svg>
+    <svg class="road" xmlns="http://www.w3.org/2000/svg">
+      <path class="road__ahead" fill="none"/>
+      <path class="road__walked" fill="none"/>
+      <circle class="lantern__halo" r="15"/>
+      <circle class="lantern" r="6"/>
+    </svg>
+  </div>
+
+  <header class="stop stop--hero" data-side="l" data-sc-act="hero">
+    <span class="pin pin--start" aria-hidden="true"></span>
+    <div class="ridges" aria-hidden="true">
+      <svg class="ridge ridge--far" viewBox="0 0 1440 400" preserveAspectRatio="none"><path d="M0 250 L120 170 L230 215 L360 120 L470 190 L610 95 L760 185 L880 140 L1010 205 L1150 110 L1290 180 L1440 130 L1440 400 L0 400 Z"/></svg>
+      <svg class="ridge ridge--mid" viewBox="0 0 1440 400" preserveAspectRatio="none"><path d="M0 300 L150 235 L290 280 L430 205 L600 270 L740 215 L900 290 L1060 225 L1210 275 L1330 235 L1440 262 L1440 400 L0 400 Z"/></svg>
+      <svg class="ridge ridge--near" viewBox="0 0 1440 400" preserveAspectRatio="none"><path d="M0 345 C180 318 300 352 470 330 C640 308 760 356 940 338 C1110 322 1260 350 1440 326 L1440 400 L0 400 Z"/></svg>
+    </div>
+    <div class="hero__copy">
+      <p class="hero__kicker">European Leadership Meeting · 2026</p>
+      <h1>AI for ISKCON Leadership</h1>
+      <p class="hero__sub">Leadership, governance and organisational application</p>
+      <p class="hero__meta">Part one of two · New Mayapur, France · 26–27 September 2026 · presenter Pitambara dasa</p>
+    </div>
+  </header>
+
+  <!-- 02 -->
+  <section class="stop" id="s02" data-side="r" data-sc-act="stop">
+    <span class="pin" aria-hidden="true"></span>
+    <p class="sign">Leadership &amp; organisation</p>
+    <div class="inner inner--wide">
+      <h2>AI Is Already Inside the Organisation</h2>
+      <div class="stats">
+        <div class="stat stat--lead rise">
+          <p class="stat__num"><span class="num">88%</span></p>
+          <p class="stat__text">of surveyed organisations report using AI in at least one business function</p>
+          <p class="stat__src">Source: Stanford AI Index 2026 · adoption figure via McKinsey</p>
+        </div>
+        <div class="stat rise" style="--d:1">
+          <p class="stat__num"><span class="num">362</span></p>
+          <p class="stat__text">AI incidents recorded in 2025, against 233 in 2024</p>
+          <p class="stat__src">Source: Stanford AI Index 2026</p>
+        </div>
+        <div class="stat rise" style="--d:2">
+          <p class="stat__num"><span class="num">7%</span></p>
+          <p class="stat__text">of surveyed nonprofits report major gains in capacity and strategic priorities</p>
+          <p class="stat__src">Source: Virtuous 2026 report · 346 nonprofits</p>
+        </div>
+      </div>
+      <dl class="rows">
+        <div class="row rise"><dt>The gap</dt><dd>Use is common. Measured benefit and control are rare.</dd></div>
+        <div class="row rise" style="--d:1"><dt>The condition</dt><dd>It arrives through email, documents, search and meeting tools, without anyone deciding to adopt it.</dd></div>
+        <div class="row rise" style="--d:2"><dt>The consequence</dt><dd>If no policy exists, staff invent one.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- 03 -->
+  <section class="stop" id="s03" data-side="l" data-sc-act="stop">
+    <span class="pin" aria-hidden="true"></span>
+    <p class="sign">Risk we carry</p>
+    <div class="inner">
+      <h2>When the Assistant Can Act</h2>
+      <div class="marks marks--asym">
+        <article class="mark rise">
+          <p class="mark__label">Full control</p>
+          <h3>Permission is the real setting</h3>
+          <p>Given access, an assistant can open, change and delete files, send messages and reach connected systems. The account it borrows decides how far it reaches.</p>
+        </article>
+        <article class="mark rise" style="--d:1">
+          <p class="mark__label">Unattended</p>
+          <h3>No one is watching</h3>
+          <p>Left running alone, it continues past its first mistake. A wrong instruction repeated quickly is harder to undo than a wrong sentence.</p>
+        </article>
+        <article class="mark rise" style="--d:2">
+          <p class="mark__label">The boundary</p>
+          <h3>Limits are agreed first</h3>
+          <p>Decide in advance which actions need confirmation, which information stays out, and who is able to stop a run that has started.</p>
+        </article>
+      </div>
+      <p class="band wipe">One authorised assistant reaches further than one person's desk. Its limits are agreed before the task begins.</p>
+    </div>
+  </section>
+
+  <!-- 04 -->
+  <section class="stop" id="s04" data-side="r" data-sc-act="stop">
+    <span class="pin" aria-hidden="true"></span>
+    <p class="sign">Benefits and costs</p>
+    <div class="inner inner--wide">
+      <h2>Benefits and Risks of AI in Our Work</h2>
+      <p class="lede">Each use needs someone who checks the result and takes responsibility.</p>
+      <table class="ledger">
+        <thead><tr><th scope="col">Area</th><th scope="col">What we gain</th><th scope="col">Risk without review</th></tr></thead>
+        <tbody>
+          <tr class="rise"><td>Drafting</td><td data-label="What we gain">Faster letters, minutes and reports</td><td data-label="Risk without review">Unreviewed messages sent in our name</td></tr>
+          <tr class="rise" style="--d:1"><td>Language</td><td data-label="What we gain">Drafts in more languages</td><td data-label="Risk without review">Errors in meaning and terminology</td></tr>
+          <tr class="rise" style="--d:2"><td>Memory</td><td data-label="What we gain">Searchable resolutions and records</td><td data-label="Risk without review">Invented quotations and wrong references</td></tr>
+          <tr class="rise" style="--d:3"><td>Analysis</td><td data-label="What we gain">Faster research and comparison</td><td data-label="Risk without review">Unsupported conclusions that sound certain</td></tr>
+          <tr class="rise"><td>Capacity</td><td data-label="What we gain">More time for devotee care and service</td><td data-label="Risk without review">Fewer opportunities to train successors</td></tr>
+          <tr class="rise" style="--d:1"><td>Voice</td><td data-label="What we gain">Easier access to recordings and texts</td><td data-label="Risk without review">Fabricated words in a familiar voice</td></tr>
+          <tr class="rise" style="--d:2"><td>Suppliers</td><td data-label="What we gain">Capability we do not have to build</td><td data-label="Risk without review">Dependence on a few providers and their terms</td></tr>
+          <tr class="rise" style="--d:3"><td>Rules</td><td data-label="What we gain">Clear expectations once they are set</td><td data-label="Risk without review">Requirements in Europe keep changing by use case</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 05 -->
+  <section class="stop stop--veil" id="s05" data-side="l" data-sc-act="stop">
+    <span class="pin" aria-hidden="true"></span>
+    <p class="sign">Demonstration</p>
+    <div class="inner inner--narrow veil">
+      <h2>Whose Voice Is It?</h2>
+      <p class="lede">A labelled AI demonstration is played here in the room: a familiar face and a familiar voice saying words that were never spoken. The recording is not published. Permission from BBT covers the room only.</p>
+      <p class="body">The point it makes: a recognisable face and a recognisable voice do not by themselves establish where the words came from. The next slide shows what can be done about that.</p>
+    </div>
+  </section>
+
+  <!-- 06 -->
+  <section class="stop" id="s06" data-side="r" data-sc-act="stop">
+    <span class="pin" aria-hidden="true"></span>
+    <p class="sign">Authenticity and proof</p>
+    <div class="inner inner--wide">
+      <h2>Digital Verification for Images, Audio and Video</h2>
+      <div class="marks marks--zig">
+        <article class="mark rise">
+          <p class="mark__label">Digital profiles and signatures</p>
+          <h3>A digital profile for each file</h3>
+          <p>Record each original’s source details and file hash. BBT Archive can digitally sign the record. A checking tool then compares the hash and verifies the signature.</p>
+        </article>
+        <article class="mark rise" style="--d:1">
+          <p class="mark__label">Checking quotations</p>
+          <h3>AI finds the source</h3>
+          <p>AI finds exact passages and context in BBT Archive. A quotation absent after a full check is suspect. Voice similarity alone cannot authenticate a recording.</p>
+        </article>
+        <article class="mark rise">
+          <p class="mark__label">The prior question</p>
+          <h3>Should such a tool exist?</h3>
+          <p>Before we ask whether an “ask Prabhupāda” service answers accurately, we must ask whether it should exist. A synthesised reply in his person is not his instruction, and devotees may not hear the difference.</p>
+        </article>
+        <article class="mark rise" style="--d:1">
+          <p class="mark__label">Platforms and law</p>
+          <h3>Platform action and legal rights</h3>
+          <p>Content ID matches reused recordings. Rights holders can pursue infringements. EU rules require disclosure of covered deepfakes.</p>
+        </article>
+      </div>
+      <p class="band rise">Approved tools should cite the Archive and separate quotation from summary. Whether a personified tool is permitted at all is a decision of its own.</p>
+    </div>
+  </section>
+
+  <!-- 07 -->
+  <section class="stop" id="s07" data-side="l" data-sc-act="stop">
+    <span class="pin" aria-hidden="true"></span>
+    <p class="sign">Internal case</p>
+    <div class="inner inner--wide">
+      <h2>AI Checks in Our Book Production</h2>
+      <div class="marks marks--2">
+        <article class="mark rise">
+          <p class="mark__label">Our workflow</p>
+          <h3>Human translation first</h3>
+          <p>A finished chapter from a human translator, with normal editorial work. The defined checks run afterwards, never instead.</p>
+        </article>
+        <article class="mark rise" style="--d:1">
+          <p class="mark__label">What the checks found</p>
+          <h3>Twelve titles, about 2,000 findings</h3>
+          <p>Findings are ordered by severity. The editor accepts or rejects each one, and the confirmed errors are fewer.</p>
+        </article>
+        <article class="mark mark--big rise">
+          <p class="mark__label">The largest case</p>
+          <h3>913,000 lines, 50,000 corrections</h3>
+          <p>A Bulgarian hyphenation dictionary. By hand, two hours a day for three years. With these checks, two hours a day for three weeks.</p>
+        </article>
+        <article class="mark rise" style="--d:1">
+          <p class="mark__label">The precedent</p>
+          <h3>The tools have changed before</h3>
+          <p>His Guru Mahārāja called the printing press the bṛhad-mṛdaṅga, the great drum. He dictated these books into a machine. The tools changed; the responsibility did not.</p>
+        </article>
+      </div>
+      <p class="band band--kin kin">The machine finds. The editor decides.</p>
+      <ul class="links">
+        <li><a href="https://haripetrov-stack.github.io/elm-2026-site/files/qa-report-sample.html">Sample report: the diacritics check of Śrī Īśopaniṣad</a></li>
+        <li><a href="https://haripetrov-stack.github.io/elm-2026-site/files/prompt-translation-check.txt">The prompt behind the meaning check</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 08 -->
+  <section class="stop" id="s08" data-side="r" data-sc-act="stop">
+    <span class="pin" aria-hidden="true"></span>
+    <p class="sign">Demonstration</p>
+    <div class="inner">
+      <h2>Questions Answered with Source References</h2>
+      <ol class="steps">
+        <li class="step rise"><h3>A prepared demo collection.</h3><p>50 files with about 23 million words, prepared for this demonstration. The manifest describes this collection’s scope.</p></li>
+        <li class="step rise" style="--d:1"><h3>One question, asked precisely.</h3><p>“What did he say about children” returns a thousand statements. A defined question returns a passage we can open and read.</p></li>
+        <li class="step rise" style="--d:2"><h3>References we can inspect.</h3><p>Open the cited verse, letter or transcript. Read the surrounding passage and distinguish quotations from the model’s summary.</p></li>
+      </ol>
+      <p class="band rise">This demo illustrates source checking. BBT Archive remains the reference.</p>
+      <ul class="links">
+        <li><a href="https://haripetrov-stack.github.io/elm-2026-site/files/notebooklm-corpus-MANIFEST.md">The corpus manifest</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 09 -->
+  <section class="stop" id="s09" data-side="l" data-sc-act="stop">
+    <span class="pin" aria-hidden="true"></span>
+    <p class="sign">Demonstration</p>
+    <div class="inner inner--wide">
+      <h2>A Searchable Draft of the ISKCON Law Book</h2>
+      <div class="search rise">
+        <p class="search__label">Try searching</p>
+        <ul class="chips">
+          <li><a href="https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=succession">succession</a></li>
+          <li><a href="https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=child%20protection">child protection</a></li>
+          <li><a href="https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=temple%20president">temple president</a></li>
+          <li><a href="https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=zonal%20secretary">zonal secretary</a></li>
+          <li><a href="https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=sannyasa">sannyasa</a></li>
+          <li><a href="https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=dispute">dispute</a></li>
+          <li><a href="https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=trustee">trustee</a></li>
+          <li><a href="https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=vyasa-puja">vyasa-puja</a></li>
+        </ul>
+      </div>
+      <ol class="steps steps--row">
+        <li class="step rise"><h3>Ordered in 1995.</h3><p>A 1995 GBC resolution called for a consolidated Law Book. This demonstration uses the 2018 edition as its starting point.</p></li>
+        <li class="step rise" style="--d:1"><h3>Assembled overnight.</h3><p>Published resolutions from 2019 to 2026 organised under the book’s chapters, with references to the source documents.</p></li>
+        <li class="step rise" style="--d:2"><h3>A draft, and nothing more.</h3><p>An unapproved working draft. An authorised committee must review which provisions remain in force and resolve conflicts.</p></li>
+      </ol>
+      <p class="band rise">422 pages with search and source links. Legal and institutional review still matter.</p>
+      <ul class="links">
+        <li><a href="https://haripetrov-stack.github.io/iskcon-law-book/">Open it now · haripetrov-stack.github.io/iskcon-law-book</a></li>
+        <li><a href="https://haripetrov-stack.github.io/iskcon-law-book/iskcon-law-draft-2018-2026.pdf">The same draft as PDF</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section class="stop" id="s10" data-side="r" data-sc-act="stop">
+    <span class="pin" aria-hidden="true"></span>
+    <p class="sign">Practical</p>
+    <div class="inner inner--wide">
+      <h2>Writing the Prompt that Works</h2>
+      <div class="versus">
+        <article class="mark mark--weak rise">
+          <p class="mark__label">Weak</p>
+          <h3>Short generic prompt</h3>
+          <p class="prompt">“Compare Bulgarian translation and English.”</p>
+          <p>The answer could belong to anything and is discarded.</p>
+        </article>
+        <article class="mark mark--strong rise" style="--d:1">
+          <p class="mark__label">Strong</p>
+          <h3>A defined task</h3>
+          <p class="prompt">“You are checking a finished Bulgarian translation against the English original. Both files are attached. List only the places where the meaning differs: the English, the Bulgarian, and the reason, in a table. Change nothing else.”</p>
+        </article>
+      </div>
+      <article class="mark mark--parts rise">
+        <p class="mark__label">The four parts</p>
+        <h3>Role, material, task, form</h3>
+        <p>Who it is. What it has in front of it. What is wanted. In what form.</p>
+      </article>
+      <p class="band rise">A useful prompt states the role, source material, task and required format.</p>
+      <ul class="links">
+        <li><a href="https://haripetrov-stack.github.io/elm-2026-site/files/prompt-translation-check.txt">The prompt, ready to adapt</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 11 -->
+  <section class="stop" id="s11" data-side="l" data-sc-act="stop">
+    <span class="pin" aria-hidden="true"></span>
+    <p class="sign">Demonstration</p>
+    <div class="inner">
+      <h2>From Our Own Work</h2>
+      <div class="marks marks--2">
+        <article class="mark rise">
+          <p class="mark__label">Live demonstration</p>
+          <h3>Voice Chat</h3>
+          <p>Demonstrates a good prompt: precise instructions, given by voice.</p>
+        </article>
+        <article class="mark rise" style="--d:1">
+          <p class="mark__label">Built in days</p>
+          <h3>Months of specialist work</h3>
+          <p>Site structure, code, page templates and batch processing of the audio files. A person chose the recordings, the design and the moment to publish.</p>
+        </article>
+      </div>
+      <ul class="links links--big">
+        <li><a href="https://spiritualsoundspace.com">spiritualsoundspace.com</a></li>
+        <li><a href="https://spiritualsound.space">spiritualsound.space</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 12 -->
+  <section class="stop" id="s12" data-side="r" data-sc-act="stop">
+    <span class="pin" aria-hidden="true"></span>
+    <p class="sign">A question we own</p>
+    <div class="inner inner--wide">
+      <h2>AI in Devotee Education</h2>
+      <div class="marks marks--zig">
+        <article class="mark rise">
+          <p class="mark__label">The assessment</p>
+          <h3>Whose work are we assessing?</h3>
+          <p>Bhakti-śāstrī and higher qualifications depend on students’ understanding. An essay alone may not establish who wrote it.</p>
+        </article>
+        <article class="mark rise" style="--d:1">
+          <p class="mark__label">The style</p>
+          <h3>Fluency is not proof</h3>
+          <p>Smooth prose, repeated phrasing and reading aloud can raise questions. AI can also imitate an uneven style and deliberate mistakes.</p>
+        </article>
+        <article class="mark rise">
+          <p class="mark__label">The tools</p>
+          <h3>Detectors need human review</h3>
+          <p>Pangram and GPTZero can flag text. False positives and missed AI text occur. A score or a hidden prompt is insufficient evidence.</p>
+        </article>
+        <article class="mark rise" style="--d:1">
+          <p class="mark__label">Our courses</p>
+          <h3>Evidence of learning</h3>
+          <p>Oral defence, drafts and supervised work help assess understanding. Course leaders should define allowed AI use and disclosure.</p>
+        </article>
+      </div>
+      <p class="band band--q rise">Where is the line for our own courses, and who draws it?</p>
+    </div>
+  </section>
+
+  <!-- 13 -->
+  <section class="stop stop--hush" id="s13" data-side="l" data-sc-act="stop">
+    <span class="pin" aria-hidden="true"></span>
+    <p class="sign">The human side</p>
+    <div class="inner inner--narrow">
+      <h2>What It Costs the Person</h2>
+      <div class="marks">
+        <article class="mark rise">
+          <p class="mark__label">The day</p>
+          <h3>Work loses its edges</h3>
+          <p>A subscription buys capacity, and capacity invites more hours. Morning programme, japa and rest are the first things those hours take.</p>
+        </article>
+        <article class="mark rise">
+          <p class="mark__label">The mind</p>
+          <h3>The work moves into the head</h3>
+          <p>Less mechanical work, more specifying, judging and checking. That is a heavier kind of tiredness and it is easy to miss in ourselves.</p>
+        </article>
+        <article class="mark rise">
+          <p class="mark__label">The heart</p>
+          <h3>Attachment without a person</h3>
+          <p>Companion applications answer warmly at any hour, and the young are most exposed. Providers added protections after serious cases; the pull remains.</p>
+        </article>
+      </div>
+      <p class="band rise">We care for devotees. Their attention and their daily sādhana are part of that care.</p>
+    </div>
+  </section>
+
+  <!-- 14: the crossroads -->
+  <section class="stop stop--cross" id="s14" data-side="r" data-sc-act="peak">
+    <span class="pin" aria-hidden="true"></span>
+    <div class="cross__stage">
+      <p class="sign">For the tables</p>
+      <h2>Six Questions For This Room</h2>
+      <div class="cross__field">
+        <svg class="cross__trails" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <path class="trail" pathLength="1"/><path class="trail" pathLength="1"/><path class="trail" pathLength="1"/>
+          <path class="trail" pathLength="1"/><path class="trail" pathLength="1"/><path class="trail" pathLength="1"/>
+        </svg>
+        <span class="cross__node" aria-hidden="true"></span>
+        <ol class="qs">
+          <li class="q"><h3>1. Image, voice and likeness</h3><p>May anyone generate the image, voice or video of Śrīla Prabhupāda, or of a devotee? Should a tool that answers in his person exist at all?</p></li>
+          <li class="q"><h3>2. Our education</h3><p>Is AI usage permitted in essays and examinations, and to what extent?</p></li>
+          <li class="q"><h3>3. Research</h3><p>How far may AI go in the studies and surveys we commission?</p></li>
+          <li class="q"><h3>4. Devotee data</h3><p>What must never be entered into a public tool?</p></li>
+          <li class="q"><h3>5. Policy ownership</h3><p>Which policies already exist globally, in Europe and in each yatra? Who is responsible for the gaps?</p></li>
+          <li class="q"><h3>6. Accountability</h3><p>Who is responsible when AI goes wrong in ISKCON's name?</p></li>
+        </ol>
+      </div>
+      <p class="band band--cross">These questions need named owners and an agreed process for decisions.</p>
+    </div>
+  </section>
+
+  <!-- 15 -->
+  <section class="stop stop--dest" id="s15" data-side="l" data-sc-act="stop">
+    <span class="pin pin--dest" aria-hidden="true"></span>
+    <p class="sign">What this session asks</p>
+    <div class="inner inner--wide">
+      <h2>A Request to Begin Policy Work</h2>
+      <p class="request">ELM asks the RGB to begin work on an AI policy for Europe.</p>
+      <p class="programme">Pitambara dasa · Madayanti Mataji · break · discussion with the whole room</p>
+    </div>
+  </section>
+
+  <!-- 16 -->
+  <section class="stop stop--legend" id="s16" data-side="r" data-sc-act="stop">
+    <span class="pin pin--end" aria-hidden="true"></span>
+    <p class="sign">Session resources</p>
+    <div class="inner inner--wide">
+      <h2>Resources from Today’s Session</h2>
+      <p class="lede">Check the version date when using a document.</p>
+      <ul class="legend">
+        <li><a href="https://haripetrov-stack.github.io/elm-2026-site/files/ELM-AI-presentation-v34.pdf">The slides of part one</a></li>
+        <li><a href="https://haripetrov-stack.github.io/iskcon-law-book/">The Law Book draft</a></li>
+        <li><a href="https://haripetrov-stack.github.io/elm-2026-site/files/notebooklm-corpus-MANIFEST.md">The corpus manifest</a></li>
+        <li><a href="https://haripetrov-stack.github.io/elm-2026-site/files/qa-report-sample.html">Sample QA report</a></li>
+        <li><a href="https://haripetrov-stack.github.io/elm-2026-site/files/prompt-translation-check.txt">The prompt</a></li>
+        <li><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report">Stanford HAI, The 2026 AI Index Report</a></li>
+        <li><a href="https://539405.fs1.hubspotusercontent-na1.net/hubfs/539405/AI%20Report/Virtuous%202026%20Nonprofit%20AI%20Adoption%20Report.pdf">Virtuous, 2026 Nonprofit AI Adoption Report</a></li>
+        <li><a href="https://doi.org/10.6028/NIST.AI.600-1">NIST AI 600-1, Generative AI Profile</a></li>
+        <li><a href="https://csrc.nist.gov/glossary/term/hash_function">NIST, hash function</a></li>
+        <li><a href="https://csrc.nist.gov/glossary/term/digital_signature">NIST, digital signature</a></li>
+        <li><a href="https://spec.c2pa.org/specifications/specifications/2.2/explainer/Explainer.html">C2PA, Content Credentials</a></li>
+        <li><a href="https://support.google.com/youtube/answer/2797370?hl=en">YouTube, Content ID</a></li>
+        <li><a href="https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act">European Commission, Article 50 of the AI Act</a></li>
+        <li><a href="https://arxiv.org/abs/2304.02819">arxiv.org/abs/2304.02819</a></li>
+        <li><a href="https://arxiv.org/abs/2602.05769">arxiv.org/abs/2602.05769</a></li>
+        <li><a href="https://www.commonsensemedia.org/sites/default/files/featured-content/files/justification-for-ai-safeguards-for-kids-2026.pdf">Common Sense Media, AI safeguards for kids, 2026</a></li>
+      </ul>
+      <p class="first-version"><a href="https://haripetrov-stack.github.io/elm-2026-site/">haripetrov-stack.github.io/elm-2026-site</a></p>
+    </div>
+  </section>
+
+</main>
+<script src="road.js" defer></script>
+</body>
+</html>
