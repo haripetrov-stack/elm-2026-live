@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI for ISKCON Leadership</title>
+<meta name="description" content="European Leadership Meeting · 2026. AI for ISKCON Leadership, part one of two.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#E7E8E3; --paper-2:#DCDED8; --mat:#F3F3EF;
+  --ink:#15171A; --ink-soft:#4A4F57; --line:#B9BCB5;
+  --accent:#2440B0; --accent-ink:#F4F4EF;
+  --dark:#0F1114; --dark-2:#171A1F; --bone:#ECEBE4; --bone-soft:#A9ADB5; --accent-d:#9DB0FF;
+  --cobalt:#1D338F;
+  --serif:"EB Garamond", Garamond, "Times New Roman", serif;
+  --sans:"Archivo", "Segoe UI", system-ui, sans-serif;
+  --ease:cubic-bezier(0.23,1,0.32,1);
+  --gutter:clamp(16px,4vw,56px);
+  --section:clamp(64px,11vw,160px);
+  --e1:0 1px 2px rgba(30,36,48,.10),0 2px 6px rgba(30,36,48,.06);
+  --e2:0 6px 14px rgba(30,36,48,.10),0 18px 40px rgba(30,36,48,.10);
+  --e3:0 14px 30px rgba(10,12,16,.35),0 40px 90px rgba(10,12,16,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:clamp(18px,1.15vw,20px);line-height:1.6;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;overflow-x:clip}
+::selection{background:var(--accent);color:var(--accent-ink)}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:.2em;transition:color .15s var(--ease),text-decoration-color .15s var(--ease)}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+a:active{transform:translateY(1px)}
+h1,h2,h3{font-weight:500;text-wrap:balance;margin:0}
+p{margin:0;text-wrap:pretty}
+.label{font-family:var(--sans);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--ink-soft);line-height:1.4}
+.num{font-variant-numeric:tabular-nums lining-nums}
+.wrap{width:min(1240px,100% - 2*var(--gutter));margin-inline:auto}
+
+/* grain */
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* ---------- frontispiece ---------- */
+.front{position:relative;min-height:100svh;display:grid;align-items:end;padding:var(--gutter);overflow:hidden;isolation:isolate}
+.front .frames{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.fr{position:absolute;background:var(--mat);box-shadow:var(--e2);border:1px solid #fff}
+.fr::before{content:"";position:absolute;inset:12%;border:1px solid var(--line);background:linear-gradient(160deg,var(--paper-2),#cfd2cb)}
+.fr.back{width:24vw;height:31vw;right:30vw;top:8vh;opacity:.55;filter:blur(2px);transform:translateY(calc(var(--py,0) * -1px))}
+.fr.mid{width:30vw;height:22vw;right:6vw;top:14vh;opacity:.85;filter:blur(.6px);transform:translateY(calc(var(--py,0) * -.55px))}
+.fr.fore{width:20vw;height:26vw;right:-3vw;bottom:-6vw;box-shadow:var(--e3);transform:translateY(calc(var(--py,0) * .35px))}
+.front-copy{max-width:min(860px,100%);padding-bottom:clamp(24px,6vh,72px)}
+.front h1{font-size:clamp(3rem,8.4vw,7.6rem);line-height:.95;letter-spacing:-.025em;font-weight:500;margin:.35em 0 .3em}
+.front h1 em{font-style:italic;color:var(--accent)}
+.front .sub{font-size:clamp(1.2rem,2vw,1.6rem);font-style:italic;color:var(--ink-soft);max-width:30ch}
+.front .meta{margin-top:clamp(20px,4vh,40px)}
+
+/* ---------- thumb index (signature) ---------- */
+.thumbs{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:40;display:flex;flex-direction:column;gap:3px;margin:0;padding:0;list-style:none}
+.thumbs a{position:relative;display:flex;align-items:center;justify-content:flex-start;height:clamp(22px,4.2vh,36px);width:58px;padding-left:10px;background:var(--paper-2);border:1px solid var(--line);border-right:0;border-radius:4px 0 0 4px;font-family:var(--sans);font-size:11.5px;font-weight:600;letter-spacing:.06em;color:var(--ink-soft);text-decoration:none;transform:translateX(22px);transition:transform .2s var(--ease),background-color .2s var(--ease),color .2s var(--ease);box-shadow:var(--e1)}
+.thumbs a:hover,.thumbs a:focus-visible{transform:translateX(12px);color:var(--ink)}
+.thumbs a.cur{transform:translateX(0);background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.thumbs a .tip{position:absolute;right:calc(100% + 10px);white-space:nowrap;background:var(--ink);color:var(--paper);font-family:var(--serif);font-size:15px;font-style:italic;font-weight:400;letter-spacing:0;padding:5px 10px;border-radius:4px;opacity:0;transform:translateX(6px);pointer-events:none;transition:opacity .16s var(--ease),transform .16s var(--ease)}
+.thumbs a:hover .tip,.thumbs a:focus-visible .tip{opacity:1;transform:none}
+.thumbs.on-dark a:not(.cur){background:var(--dark-2);border-color:#2b3038;color:var(--bone-soft)}
+.pocket{display:none}
+@media (max-width:760px){
+  .thumbs{display:none}
+  .pocket{display:flex;position:fixed;right:0;bottom:18px;z-index:40;align-items:center;gap:8px;padding:10px 14px 10px 12px;background:var(--accent);color:var(--accent-ink);border-radius:6px 0 0 6px;font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.08em;text-decoration:none;box-shadow:var(--e2);min-height:44px}
+}
+
+/* ---------- index ---------- */
+.index{padding:var(--section) 0 calc(var(--section)*.6);border-top:1px solid var(--line)}
+.index-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:clamp(28px,4vw,48px)}
+.index-head h2{font-size:clamp(2.2rem,4.4vw,3.6rem);letter-spacing:-.015em;font-style:italic}
+.toc{list-style:none;margin:0;padding:0;columns:2 460px;column-gap:clamp(24px,5vw,80px)}
+.toc li{break-inside:avoid}
+.toc a{display:grid;grid-template-columns:3.2em 1fr;gap:12px;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none;transition:color .15s var(--ease)}
+.toc a:hover{color:var(--accent)}
+.toc a:hover .t{text-decoration:underline;text-underline-offset:.2em;text-decoration-thickness:1px}
+.toc .n{font-family:var(--sans);font-weight:600;font-size:13px;letter-spacing:.08em;color:var(--accent)}
+.toc .k{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);font-weight:500}
+.toc .t{font-size:1.2rem;line-height:1.3}
+
+/* ---------- plates ---------- */
+.plate{position:relative;padding:var(--section) 0;border-top:1px solid var(--line);scroll-margin-top:0}
+.cap{display:grid;gap:10px;margin-bottom:clamp(32px,4.5vw,56px);max-width:60ch}
+.cap .pl{font-family:var(--sans);font-weight:700;font-size:13px;letter-spacing:.16em;color:var(--accent);text-transform:uppercase}
+.cap h2{font-size:clamp(2rem,4.6vw,4rem);line-height:1.02;letter-spacing:-.018em}
+.cap .kick{font-style:italic;color:var(--ink-soft);font-size:1.15rem}
+.plate.trail .cap{margin-left:auto;text-align:right}
+.mat{background:var(--mat);border:1px solid #fff;box-shadow:var(--e2);padding:clamp(18px,3.4vw,48px);position:relative}
+.mat::before{content:"";position:absolute;inset:clamp(8px,1vw,14px);border:1px solid var(--line);pointer-events:none}
+.mat > *{position:relative}
+.entry{border-top:1px solid var(--ink);padding-top:14px}
+.entry h3{font-size:clamp(1.35rem,2vw,1.7rem);line-height:1.2;font-style:italic;margin:6px 0 10px}
+.entry p{color:var(--ink)}
+.band{margin-top:clamp(32px,4vw,56px);font-size:clamp(1.35rem,2.4vw,2rem);line-height:1.3;font-style:italic;max-width:34ch;padding-left:clamp(16px,2vw,28px);border-left:1px solid var(--accent)}
+.links{margin-top:28px;display:flex;flex-wrap:wrap;gap:10px 28px;font-family:var(--sans);font-size:15px;font-weight:500}
+.links a{display:inline-flex;align-items:center;min-height:44px}
+
+/* 02 figures */
+.figs{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:clamp(20px,3vw,48px);align-items:end;margin-bottom:clamp(36px,5vw,64px)}
+.fig .big{font-size:clamp(4rem,9vw,8.4rem);line-height:.9;letter-spacing:-.03em;font-weight:500;display:block}
+.fig:first-child .big{font-size:clamp(5rem,13vw,11rem);color:var(--accent)}
+.fig p{margin-top:12px;max-width:30ch}
+.fig .src{margin-top:10px;font-family:var(--sans);font-size:13px;color:var(--ink-soft);line-height:1.45}
+.two{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,40px)}
+@media (max-width:860px){.figs{grid-template-columns:1fr 1fr}.fig:first-child{grid-column:1/-1}.two{grid-template-columns:1fr}}
+
+/* 03 hang */
+.hang{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,44px)}
+.hang .entry:nth-child(2){margin-top:clamp(0px,7vw,110px)}
+.hang .entry:nth-child(3){margin-top:clamp(0px,3vw,48px)}
+@media (max-width:860px){.hang{grid-template-columns:1fr}.hang .entry{margin-top:0!important}}
+
+/* 04 ledger */
+.ledger-intro{font-size:clamp(1.25rem,2vw,1.6rem);font-style:italic;max-width:40ch;margin-bottom:24px}
+.ledger{width:100%;border-collapse:collapse;font-size:1rem}
+.ledger th{font-family:var(--sans);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;text-align:left;color:var(--ink-soft);font-weight:600;padding:10px 12px;border-bottom:1px solid var(--ink)}
+.ledger td{padding:14px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+.ledger td:first-child{font-style:italic;font-size:1.15rem;width:18%}
+.ledger td:last-child{color:#6a2a1f}
+@media (max-width:640px){
+  .ledger thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  .ledger,.ledger tbody,.ledger tr,.ledger td{display:block;width:100%!important}
+  .ledger tr{padding:12px 0;border-bottom:1px solid var(--line)}
+  .ledger td{border:0;padding:4px 0}
+  .ledger td:first-child{font-size:1.3rem}
+  .ledger td[data-label]::before{content:attr(data-label);display:block;font-family:var(--sans);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;font-style:normal}
+}
+
+/* 05 peak: the empty frame */
+.peak{background:var(--dark);color:var(--bone);border:0;padding:0;height:260vh}
+.peak .stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:center;gap:clamp(24px,5vw,80px);padding:0 max(var(--gutter),calc((100vw - 1240px)/2))}
+.peak .light{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse calc(18% + var(--p,1) * 44%) calc(26% + var(--p,1) * 52%) at 30% 50%,rgba(236,235,228,.16),rgba(236,235,228,.05) 55%,transparent 72%)}
+.void{position:relative;aspect-ratio:4/5;max-height:74vh;width:100%;justify-self:center;background:var(--dark-2);border:1px solid #2d323a;box-shadow:var(--e3)}
+.void::before{content:"";position:absolute;inset:11%;border:1px solid #333944;background:#121418}
+.void svg{position:absolute;left:11%;right:11%;top:50%;width:78%;height:40px;transform:translateY(-50%);overflow:visible}
+.peak .cap .pl{color:var(--accent-d)}
+.peak .cap .kick{color:var(--bone-soft)}
+.peak .cap h2{font-size:clamp(2.6rem,6vw,5.4rem);font-style:italic}
+.peak .say{display:grid;gap:18px;max-width:44ch}
+.peak .say p{font-size:clamp(1.1rem,1.5vw,1.3rem);color:var(--bone)}
+.peak .say p + p{color:var(--bone-soft)}
+.js .peak .cue{opacity:0;transition:opacity .5s var(--ease)}
+.js .peak .cue.on{opacity:1}
+@media (max-width:760px){
+  .peak{height:230vh}
+  .peak .stage{grid-template-columns:1fr;align-content:center;gap:18px;padding-top:24px;padding-bottom:24px}
+  .void{max-height:20vh;width:auto;justify-self:start;aspect-ratio:4/5;height:20vh}
+  .peak .cap{margin-bottom:10px;gap:6px}
+  .peak .cap h2{font-size:2.3rem}
+  .peak .say{gap:12px}
+  .peak .say p{font-size:1rem;line-height:1.5}
+  .peak .light{background:radial-gradient(ellipse calc(30% + var(--p,1) * 60%) calc(16% + var(--p,1) * 30%) at 25% 28%,rgba(236,235,228,.16),transparent 70%)}
+}
+
+/* 06 quad reveal */
+.quad{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line);border:1px solid var(--line)}
+.quad .entry{background:var(--mat);border-top:0;padding:clamp(20px,3vw,40px)}
+.js .quad .entry.wipe{clip-path:inset(0 0 100% 0);transition:clip-path .8s var(--ease)}
+.js .quad .entry.wipe.in{clip-path:inset(0 0 0 0)}
+@media (max-width:760px){.quad{grid-template-columns:1fr}}
+
+/* 07 craft */
+.craft{display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(20px,3vw,44px)}
+.craft .lead-e{grid-row:span 3}
+.craft .lead-e h3{font-size:clamp(2rem,4vw,3.4rem);line-height:1.05;font-style:normal;letter-spacing:-.015em}
+@media (max-width:860px){.craft{grid-template-columns:1fr}.craft .lead-e{grid-row:auto}}
+
+/* 08 steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:s}
+.steps li{display:grid;grid-template-columns:clamp(48px,6vw,80px) 1fr;gap:clamp(12px,2vw,28px);padding:22px 0;border-top:1px solid var(--line)}
+.steps li::before{counter-increment:s;content:counter(s);font-family:var(--serif);font-style:italic;font-size:clamp(2rem,4vw,3rem);line-height:1;color:var(--accent)}
+.steps h3{font-size:clamp(1.3rem,2vw,1.6rem);margin-bottom:6px}
+
+/* 09 law */
+.terms{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 0;font-size:clamp(1.2rem,2.2vw,1.8rem);font-style:italic;margin-bottom:clamp(28px,4vw,48px)}
+.terms .lbl{font-family:var(--sans);font-style:normal;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--ink-soft);margin-right:14px}
+.terms a{padding:4px 0}
+.terms .sep{color:var(--ink-soft);padding:0 .45em}
+.law{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,64px);align-items:start}
+@media (max-width:860px){.law{grid-template-columns:1fr}}
+
+/* 10 diptych */
+.dip{display:grid;grid-template-columns:1fr 1.5fr;gap:clamp(16px,2.4vw,32px);align-items:stretch}
+.dip .mat.weak{background:var(--paper-2);box-shadow:var(--e1);filter:saturate(.4)}
+.dip .mat.weak p{color:var(--ink-soft)}
+.dip .mat.strong{box-shadow:var(--e3);transform:translateY(-12px)}
+.dip q{quotes:none;display:block;font-size:clamp(1.15rem,1.7vw,1.4rem);font-style:italic;line-height:1.45;margin:10px 0 14px}
+.four{margin-top:clamp(28px,4vw,48px);display:grid;grid-template-columns:auto 1fr;gap:6px 28px;align-items:baseline}
+.four h3{font-size:clamp(1.6rem,3vw,2.4rem);font-style:italic}
+@media (max-width:760px){.dip{grid-template-columns:1fr}.dip .mat.strong{transform:none}.four{grid-template-columns:1fr}}
+
+/* 11 own work */
+.own{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,44px)}
+.own .entry:first-child h3{font-size:clamp(2.2rem,5vw,4rem);font-style:normal;letter-spacing:-.02em}
+@media (max-width:760px){.own{grid-template-columns:1fr}}
+
+/* 12 zig */
+.zig{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px) clamp(24px,5vw,80px)}
+.zig .entry:nth-child(even){transform:translateY(clamp(0px,5vw,72px))}
+@media (max-width:760px){.zig{grid-template-columns:1fr}.zig .entry:nth-child(even){transform:none}}
+
+/* 13 triptych */
+.trip{display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:clamp(12px,1.6vw,22px);align-items:end}
+.trip .mat{padding:clamp(20px,2.6vw,36px)}
+.trip .mat:nth-child(2){padding-top:clamp(40px,6vw,96px)}
+@media (max-width:860px){.trip{grid-template-columns:1fr}.trip .mat:nth-child(2){padding-top:clamp(20px,2.6vw,36px)}}
+
+/* 14 wall: pan */
+.wallsec{padding:var(--section) 0}
+.rail{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(16px,2vw,28px)}
+.q{background:var(--mat);border:1px solid #fff;box-shadow:var(--e2);padding:clamp(20px,2.6vw,36px);position:relative}
+.q .qn{font-size:clamp(3.4rem,6vw,5.2rem);line-height:.9;font-style:italic;color:var(--accent);display:block;margin-bottom:12px}
+.q h3{font-family:var(--sans);font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;margin-bottom:10px;color:var(--ink)}
+.q p{font-size:1.12rem}
+.js .wallsec.pan-on{padding:0}
+.js .wallsec.pan-on .stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:24px}
+.js .wallsec.pan-on .cap{width:min(1240px,100% - 2*var(--gutter));margin-inline:auto;margin-bottom:24px}
+.js .wallsec.pan-on .rail{display:flex;gap:clamp(16px,2vw,28px);padding-inline:max(var(--gutter),calc((100vw - 1240px)/2));width:max-content;transform:translateX(calc(var(--px,0) * -1px));will-change:transform}
+.js .wallsec.pan-on .q{width:min(84vw,400px);flex:none}
+.js .wallsec.pan-on .band{width:min(84vw,420px);flex:none;align-self:center;margin:0}
+.wallsec:not(.pan-on) .rail-clip{width:min(1240px,100% - 2*var(--gutter));margin-inline:auto}
+
+/* 15 request */
+.req{background:var(--cobalt);color:var(--bone);border:0;padding:0;height:170vh}
+.req .stage{position:sticky;top:0;min-height:100vh;min-height:100svh;display:grid;align-content:center;padding:var(--gutter) max(var(--gutter),calc((100vw - 1240px)/2))}
+.req .cap .pl{color:#C9D3FF}
+.req .cap .kick{color:#C9D3FF}
+.req .cap h2{font-size:clamp(1.8rem,3vw,2.6rem);font-style:italic}
+.req .ask{font-size:clamp(2.3rem,6.4vw,6rem);line-height:1.02;letter-spacing:-.022em;max-width:17ch;font-weight:500}
+.req .who{margin-top:clamp(24px,4vh,44px);font-family:var(--sans);font-size:15px;letter-spacing:.06em;color:#D8DDF5}
+.req .ask .w{display:inline-block;transform:translateY(calc((1 - var(--wk,1)) * 22px));opacity:calc(.25 + var(--wk,1) * .75)}
+
+/* 16 back matter */
+.back{padding:var(--section) 0 calc(var(--section)*1.2)}
+.refs{list-style:none;margin:28px 0 0;padding:0;columns:2 420px;column-gap:clamp(24px,5vw,72px)}
+.refs li{break-inside:avoid;border-bottom:1px solid var(--line)}
+.refs a{display:block;padding:12px 0;min-height:44px;overflow-wrap:anywhere}
+.note{font-style:italic;font-size:1.25rem}
+.colophon{margin-top:clamp(40px,6vw,72px);display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline}
+
+/* entrance: hidden only after my script adds .js */
+.js .rise{opacity:0;transform:translateY(14px);transition:opacity .55s var(--ease),transform .55s var(--ease);transition-delay:calc(var(--i,0) * 60ms)}
+.js .rise.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .js .rise{transform:none;transition:opacity .3s linear}
+  .fr{transform:none!important}
+  .js .quad .entry.wipe{clip-path:none}
+  .req .ask .w{transform:none;opacity:1}
+}
+@media (max-width:760px){
+  .plate.trail .cap{margin-left:0;text-align:left}
+  .front{align-items:end}
+  .fr.back{width:44vw;height:56vw;right:34vw;top:6vh}
+  .fr.mid{width:52vw;height:40vw;right:-8vw;top:18vh}
+  .fr.fore{width:34vw;height:44vw;right:-8vw;bottom:auto;top:44vh}
+  .front h1{font-size:clamp(2.7rem,12vw,3.6rem)}
+  .req{height:150vh}
+}
+</style>
+</head>
+<body>
+
+<nav class="thumbs" id="thumbs" aria-label="Plates">
+</nav>
+<a class="pocket" href="#index" id="pocket"><span id="pocket-n">Index</span></a>
+
+<header class="front" id="top">
+  <div class="frames" aria-hidden="true">
+    <div class="fr back"></div>
+    <div class="fr mid"></div>
+    <div class="fr fore"></div>
+  </div>
+  <div class="front-copy">
+    <p class="label">European Leadership Meeting · 2026</p>
+    <h1>AI for <em>ISKCON</em> Leadership</h1>
+    <p class="sub">Leadership, governance and organisational application</p>
+    <p class="label meta">Part one of two · New Mayapur, France · 26–27 September 2026 · presenter Pitambara dasa</p>
+  </div>
+</header>
+
+<main>
+<section class="index" id="index" aria-labelledby="index-h">
+  <div class="wrap">
+    <div class="index-head">
+      <h2 id="index-h">Index</h2>
+      <a class="label" href="https://haripetrov-stack.github.io/elm-2026-site/">haripetrov-stack.github.io/elm-2026-site</a>
+    </div>
+    <ol class="toc" id="toc">
+      <li><a href="#pl-02"><span class="n">Pl. 02</span><span><span class="k">Leadership &amp; organisation</span><span class="t">AI Is Already Inside the Organisation</span></span></a></li>
+      <li><a href="#pl-03"><span class="n">Pl. 03</span><span><span class="k">Risk we carry</span><span class="t">When the Assistant Can Act</span></span></a></li>
+      <li><a href="#pl-04"><span class="n">Pl. 04</span><span><span class="k">Benefits and costs</span><span class="t">Benefits and Risks of AI in Our Work</span></span></a></li>
+      <li><a href="#pl-05"><span class="n">Pl. 05</span><span><span class="k">Demonstration</span><span class="t">Whose Voice Is It?</span></span></a></li>
+      <li><a href="#pl-06"><span class="n">Pl. 06</span><span><span class="k">Authenticity and proof</span><span class="t">Digital Verification for Images, Audio and Video</span></span></a></li>
+      <li><a href="#pl-07"><span class="n">Pl. 07</span><span><span class="k">Internal case</span><span class="t">AI Checks in Our Book Production</span></span></a></li>
+      <li><a href="#pl-08"><span class="n">Pl. 08</span><span><span class="k">Demonstration</span><span class="t">Questions Answered with Source References</span></span></a></li>
+      <li><a href="#pl-09"><span class="n">Pl. 09</span><span><span class="k">Demonstration</span><span class="t">A Searchable Draft of the ISKCON Law Book</span></span></a></li>
+      <li><a href="#pl-10"><span class="n">Pl. 10</span><span><span class="k">Practical</span><span class="t">Writing the Prompt that Works</span></span></a></li>
+      <li><a href="#pl-11"><span class="n">Pl. 11</span><span><span class="k">Demonstration</span><span class="t">From Our Own Work</span></span></a></li>
+      <li><a href="#pl-12"><span class="n">Pl. 12</span><span><span class="k">A question we own</span><span class="t">AI in Devotee Education</span></span></a></li>
+      <li><a href="#pl-13"><span class="n">Pl. 13</span><span><span class="k">The human side</span><span class="t">What It Costs the Person</span></span></a></li>
+      <li><a href="#pl-14"><span class="n">Pl. 14</span><span><span class="k">For the tables</span><span class="t">Six Questions For This Room</span></span></a></li>
+      <li><a href="#pl-15"><span class="n">Pl. 15</span><span><span class="k">What this session asks</span><span class="t">A Request to Begin Policy Work</span></span></a></li>
+      <li><a href="#pl-16"><span class="n">Pl. 16</span><span><span class="k">Session resources</span><span class="t">Resources from Today’s Session</span></span></a></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 02 -->
+<section class="plate" id="pl-02" data-sc-act="flow" aria-labelledby="h-02">
+  <div class="wrap">
+    <header class="cap rise"><div class="pl">Plate 02</div><p class="kick">Leadership &amp; organisation</p><h2 id="h-02">AI Is Already Inside the Organisation</h2></header>
+    <div class="figs">
+      <div class="fig rise" style="--i:0"><span class="big num" data-count="88" data-suffix="%">88%</span><p>of surveyed organisations report using AI in at least one business function</p><div class="src">Source: Stanford AI Index 2026 · adoption figure via McKinsey</div></div>
+      <div class="fig rise" style="--i:1"><span class="big num" data-count="362">362</span><p>AI incidents recorded in 2025, against 233 in 2024</p><div class="src">Source: Stanford AI Index 2026</div></div>
+      <div class="fig rise" style="--i:2"><span class="big num" data-count="7" data-suffix="%">7%</span><p>of surveyed nonprofits report major gains in capacity and strategic priorities</p><div class="src">Source: Virtuous 2026 report · 346 nonprofits</div></div>
+    </div>
+    <div class="two">
+      <div class="entry rise" style="--i:0"><div class="label">The gap</div><p>Use is common. Measured benefit and control are rare.</p></div>
+      <div class="entry rise" style="--i:1"><div class="label">The condition</div><p>It arrives through email, documents, search and meeting tools, without anyone deciding to adopt it.</p></div>
+      <div class="entry rise" style="--i:2"><div class="label">The consequence</div><p>If no policy exists, staff invent one.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 -->
+<section class="plate trail" id="pl-03" data-sc-act="flow" aria-labelledby="h-03">
+  <div class="wrap">
+    <header class="cap rise"><div class="pl">Plate 03</div><p class="kick">Risk we carry</p><h2 id="h-03">When the Assistant Can Act</h2></header>
+    <div class="hang">
+      <article class="entry rise" style="--i:0"><div class="label">Full control</div><h3>Permission is the real setting</h3><p>Given access, an assistant can open, change and delete files, send messages and reach connected systems. The account it borrows decides how far it reaches.</p></article>
+      <article class="entry rise" style="--i:1"><div class="label">Unattended</div><h3>No one is watching</h3><p>Left running alone, it continues past its first mistake. A wrong instruction repeated quickly is harder to undo than a wrong sentence.</p></article>
+      <article class="entry rise" style="--i:2"><div class="label">The boundary</div><h3>Limits are agreed first</h3><p>Decide in advance which actions need confirmation, which information stays out, and who is able to stop a run that has started.</p></article>
+    </div>
+    <p class="band rise">One authorised assistant reaches further than one person's desk. Its limits are agreed before the task begins.</p>
+  </div>
+</section>
+
+<!-- 04 -->
+<section class="plate" id="pl-04" data-sc-act="flow" aria-labelledby="h-04">
+  <div class="wrap">
+    <header class="cap rise"><div class="pl">Plate 04</div><p class="kick">Benefits and costs</p><h2 id="h-04">Benefits and Risks of AI in Our Work</h2></header>
+    <div class="mat rise">
+      <p class="ledger-intro">Each use needs someone who checks the result and takes responsibility.</p>
+      <table class="ledger">
+        <thead><tr><th scope="col">Area</th><th scope="col">What we gain</th><th scope="col">Risk without review</th></tr></thead>
+        <tbody>
+          <tr><td>Drafting</td><td data-label="What we gain">Faster letters, minutes and reports</td><td data-label="Risk without review">Unreviewed messages sent in our name</td></tr>
+          <tr><td>Language</td><td data-label="What we gain">Drafts in more languages</td><td data-label="Risk without review">Errors in meaning and terminology</td></tr>
+          <tr><td>Memory</td><td data-label="What we gain">Searchable resolutions and records</td><td data-label="Risk without review">Invented quotations and wrong references</td></tr>
+          <tr><td>Analysis</td><td data-label="What we gain">Faster research and comparison</td><td data-label="Risk without review">Unsupported conclusions that sound certain</td></tr>
+          <tr><td>Capacity</td><td data-label="What we gain">More time for devotee care and service</td><td data-label="Risk without review">Fewer opportunities to train successors</td></tr>
+          <tr><td>Voice</td><td data-label="What we gain">Easier access to recordings and texts</td><td data-label="Risk without review">Fabricated words in a familiar voice</td></tr>
+          <tr><td>Suppliers</td><td data-label="What we gain">Capability we do not have to build</td><td data-label="Risk without review">Dependence on a few providers and their terms</td></tr>
+          <tr><td>Rules</td><td data-label="What we gain">Clear expectations once they are set</td><td data-label="Risk without review">Requirements in Europe keep changing by use case</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 05 peak -->
+<section class="plate peak" id="pl-05" data-sc-act="pin" aria-labelledby="h-05">
+  <div class="stage">
+    <div class="light" aria-hidden="true"></div>
+    <div class="void" aria-hidden="true">
+      <svg viewBox="0 0 400 40" preserveAspectRatio="none"><line x1="0" y1="20" x2="400" y2="20" stroke="#6f7682" stroke-width="1.2" vector-effect="non-scaling-stroke"/></svg>
+    </div>
+    <div>
+      <header class="cap"><div class="pl">Plate 05</div><p class="kick">Demonstration</p><h2 id="h-05">Whose Voice Is It?</h2></header>
+      <div class="say">
+        <p class="cue" data-at="0.3">A labelled AI demonstration is played here in the room: a familiar face and a familiar voice saying words that were never spoken. The recording is not published. Permission from BBT covers the room only.</p>
+        <p class="cue" data-at="0.55">The point it makes: a recognisable face and a recognisable voice do not by themselves establish where the words came from. The next slide shows what can be done about that.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 -->
+<section class="plate" id="pl-06" data-sc-act="flow" aria-labelledby="h-06">
+  <div class="wrap">
+    <header class="cap rise"><div class="pl">Plate 06</div><p class="kick">Authenticity and proof</p><h2 id="h-06">Digital Verification for Images, Audio and Video</h2></header>
+    <div class="quad">
+      <article class="entry wipe" style="--i:0"><div class="label">Digital profiles and signatures</div><h3>A digital profile for each file</h3><p>Record each original’s source details and file hash. BBT Archive can digitally sign the record. A checking tool then compares the hash and verifies the signature.</p></article>
+      <article class="entry wipe" style="--i:1"><div class="label">Checking quotations</div><h3>AI finds the source</h3><p>AI finds exact passages and context in BBT Archive. A quotation absent after a full check is suspect. Voice similarity alone cannot authenticate a recording.</p></article>
+      <article class="entry wipe" style="--i:2"><div class="label">The prior question</div><h3>Should such a tool exist?</h3><p>Before we ask whether an “ask Prabhupāda” service answers accurately, we must ask whether it should exist. A synthesised reply in his person is not his instruction, and devotees may not hear the difference.</p></article>
+      <article class="entry wipe" style="--i:3"><div class="label">Platforms and law</div><h3>Platform action and legal rights</h3><p>Content ID matches reused recordings. Rights holders can pursue infringements. EU rules require disclosure of covered deepfakes.</p></article>
+    </div>
+    <p class="band rise">Approved tools should cite the Archive and separate quotation from summary. Whether a personified tool is permitted at all is a decision of its own.</p>
+  </div>
+</section>
+
+<!-- 07 -->
+<section class="plate trail" id="pl-07" data-sc-act="flow" aria-labelledby="h-07">
+  <div class="wrap">
+    <header class="cap rise"><div class="pl">Plate 07</div><p class="kick">Internal case</p><h2 id="h-07">AI Checks in Our Book Production</h2></header>
+    <div class="craft">
+      <article class="entry lead-e rise"><div class="label">The largest case</div><h3 class="num">913,000 lines, 50,000 corrections</h3><p>A Bulgarian hyphenation dictionary. By hand, two hours a day for three years. With these checks, two hours a day for three weeks.</p></article>
+      <article class="entry rise" style="--i:1"><div class="label">Our workflow</div><h3>Human translation first</h3><p>A finished chapter from a human translator, with normal editorial work. The defined checks run afterwards, never instead.</p></article>
+      <article class="entry rise" style="--i:2"><div class="label">What the checks found</div><h3>Twelve titles, about 2,000 findings</h3><p>Findings are ordered by severity. The editor accepts or rejects each one, and the confirmed errors are fewer.</p></article>
+      <article class="entry rise" style="--i:3"><div class="label">The precedent</div><h3>The tools have changed before</h3><p>His Guru Mahārāja called the printing press the bṛhad-mṛdaṅga, the great drum. He dictated these books into a machine. The tools changed; the responsibility did not.</p></article>
+    </div>
+    <p class="band rise">The machine finds. The editor decides.</p>
+    <div class="links rise">
+      <a href="https://haripetrov-stack.github.io/elm-2026-site/files/qa-report-sample.html">Sample report: the diacritics check of Śrī Īśopaniṣad</a>
+      <a href="https://haripetrov-stack.github.io/elm-2026-site/files/prompt-translation-check.txt">The prompt behind the meaning check</a>
+    </div>
+  </div>
+</section>
+
+<!-- 08 -->
+<section class="plate" id="pl-08" data-sc-act="flow" aria-labelledby="h-08">
+  <div class="wrap">
+    <header class="cap rise"><div class="pl">Plate 08</div><p class="kick">Demonstration</p><h2 id="h-08">Questions Answered with Source References</h2></header>
+    <ol class="steps">
+      <li class="rise" style="--i:0"><div><h3>A prepared demo collection.</h3><p>50 files with about 23 million words, prepared for this demonstration. The manifest describes this collection’s scope.</p></div></li>
+      <li class="rise" style="--i:1"><div><h3>One question, asked precisely.</h3><p>“What did he say about children” returns a thousand statements. A defined question returns a passage we can open and read.</p></div></li>
+      <li class="rise" style="--i:2"><div><h3>References we can inspect.</h3><p>Open the cited verse, letter or transcript. Read the surrounding passage and distinguish quotations from the model’s summary.</p></div></li>
+    </ol>
+    <p class="band rise">This demo illustrates source checking. BBT Archive remains the reference.</p>
+    <div class="links rise"><a href="https://haripetrov-stack.github.io/elm-2026-site/files/notebooklm-corpus-MANIFEST.md">The corpus manifest</a></div>
+  </div>
+</section>
+
+<!-- 09 -->
+<section class="plate" id="pl-09" data-sc-act="flow" aria-labelledby="h-09">
+  <div class="wrap">
+    <header class="cap rise"><div class="pl">Plate 09</div><p class="kick">Demonstration</p><h2 id="h-09">A Searchable Draft of the ISKCON Law Book</h2></header>
+    <div class="terms rise">
+      <span class="lbl">Try searching</span>
+      <a href="https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=succession">succession</a><span class="sep">·</span>
+      <a href="https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=child%20protection">child protection</a><span class="sep">·</span>
+      <a href="https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=temple%20president">temple president</a><span class="sep">·</span>
+      <a href="https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=zonal%20secretary">zonal secretary</a><span class="sep">·</span>
+      <a href="https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=sannyasa">sannyasa</a><span class="sep">·</span>
+      <a href="https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=dispute">dispute</a><span class="sep">·</span>
+      <a href="https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=trustee">trustee</a><span class="sep">·</span>
+      <a href="https://haripetrov-stack.github.io/iskcon-law-book/book.html?q=vyasa-puja">vyasa-puja</a>
+    </div>
+    <div class="law">
+      <ol class="steps">
+        <li class="rise" style="--i:0"><div><h3>Ordered in 1995.</h3><p>A 1995 GBC resolution called for a consolidated Law Book. This demonstration uses the 2018 edition as its starting point.</p></div></li>
+        <li class="rise" style="--i:1"><div><h3>Assembled overnight.</h3><p>Published resolutions from 2019 to 2026 organised under the book’s chapters, with references to the source documents.</p></div></li>
+        <li class="rise" style="--i:2"><div><h3>A draft, and nothing more.</h3><p>An unapproved working draft. An authorised committee must review which provisions remain in force and resolve conflicts.</p></div></li>
+      </ol>
+      <div class="mat rise">
+        <p class="note">422 pages with search and source links. Legal and institutional review still matter.</p>
+        <div class="links">
+          <a href="https://haripetrov-stack.github.io/iskcon-law-book/">Open it now · haripetrov-stack.github.io/iskcon-law-book</a>
+          <a href="https://haripetrov-stack.github.io/iskcon-law-book/iskcon-law-draft-2018-2026.pdf">The same draft as PDF</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 -->
+<section class="plate trail" id="pl-10" data-sc-act="flow" aria-labelledby="h-10">
+  <div class="wrap">
+    <header class="cap rise"><div class="pl">Plate 10</div><p class="kick">Practical</p><h2 id="h-10">Writing the Prompt that Works</h2></header>
+    <div class="dip">
+      <article class="mat weak rise" style="--i:0"><div class="label">Weak</div><h3 class="entry-t">Short generic prompt</h3><q>“Compare Bulgarian translation and English.”</q><p>The answer could belong to anything and is discarded.</p></article>
+      <article class="mat strong rise" style="--i:1"><div class="label">Strong</div><h3 class="entry-t">A defined task</h3><q>“You are checking a finished Bulgarian translation against the English original. Both files are attached. List only the places where the meaning differs: the English, the Bulgarian, and the reason, in a table. Change nothing else.”</q></article>
+    </div>
+    <div class="four rise">
+      <div><div class="label">The four parts</div><h3>Role, material, task, form</h3></div>
+      <p>Who it is. What it has in front of it. What is wanted. In what form.</p>
+    </div>
+    <p class="band rise">A useful prompt states the role, source material, task and required format.</p>
+    <div class="links rise"><a href="https://haripetrov-stack.github.io/elm-2026-site/files/prompt-translation-check.txt">The prompt, ready to adapt</a></div>
+  </div>
+</section>
+
+<!-- 11 -->
+<section class="plate" id="pl-11" data-sc-act="flow" aria-labelledby="h-11">
+  <div class="wrap">
+    <header class="cap rise"><div class="pl">Plate 11</div><p class="kick">Demonstration</p><h2 id="h-11">From Our Own Work</h2></header>
+    <div class="own">
+      <article class="entry rise" style="--i:0"><div class="label">Live demonstration</div><h3>Voice Chat</h3><p>Demonstrates a good prompt: precise instructions, given by voice.</p></article>
+      <article class="entry rise" style="--i:1"><div class="label">Built in days</div><h3>Months of specialist work</h3><p>Site structure, code, page templates and batch processing of the audio files. A person chose the recordings, the design and the moment to publish.</p></article>
+    </div>
+    <div class="links rise">
+      <a href="https://spiritualsoundspace.com">spiritualsoundspace.com</a>
+      <a href="https://spiritualsound.space">spiritualsound.space</a>
+    </div>
+  </div>
+</section>
+
+<!-- 12 -->
+<section class="plate trail" id="pl-12" data-sc-act="flow" aria-labelledby="h-12">
+  <div class="wrap">
+    <header class="cap rise"><div class="pl">Plate 12</div><p class="kick">A question we own</p><h2 id="h-12">AI in Devotee Education</h2></header>
+    <div class="zig">
+      <article class="entry rise" style="--i:0"><div class="label">The assessment</div><h3>Whose work are we assessing?</h3><p>Bhakti-śāstrī and higher qualifications depend on students’ understanding. An essay alone may not establish who wrote it.</p></article>
+      <article class="entry rise" style="--i:1"><div class="label">The style</div><h3>Fluency is not proof</h3><p>Smooth prose, repeated phrasing and reading aloud can raise questions. AI can also imitate an uneven style and deliberate mistakes.</p></article>
+      <article class="entry rise" style="--i:2"><div class="label">The tools</div><h3>Detectors need human review</h3><p>Pangram and GPTZero can flag text. False positives and missed AI text occur. A score or a hidden prompt is insufficient evidence.</p></article>
+      <article class="entry rise" style="--i:3"><div class="label">Our courses</div><h3>Evidence of learning</h3><p>Oral defence, drafts and supervised work help assess understanding. Course leaders should define allowed AI use and disclosure.</p></article>
+    </div>
+    <p class="band rise" style="margin-top:clamp(56px,8vw,120px)">Where is the line for our own courses, and who draws it?</p>
+  </div>
+</section>
+
+<!-- 13 -->
+<section class="plate" id="pl-13" data-sc-act="flow" aria-labelledby="h-13">
+  <div class="wrap">
+    <header class="cap rise"><div class="pl">Plate 13</div><p class="kick">The human side</p><h2 id="h-13">What It Costs the Person</h2></header>
+    <div class="trip">
+      <article class="mat rise" style="--i:0"><div class="label">The day</div><h3 class="entry-t">Work loses its edges</h3><p>A subscription buys capacity, and capacity invites more hours. Morning programme, japa and rest are the first things those hours take.</p></article>
+      <article class="mat rise" style="--i:1"><div class="label">The mind</div><h3 class="entry-t">The work moves into the head</h3><p>Less mechanical work, more specifying, judging and checking. That is a heavier kind of tiredness and it is easy to miss in ourselves.</p></article>
+      <article class="mat rise" style="--i:2"><div class="label">The heart</div><h3 class="entry-t">Attachment without a person</h3><p>Companion applications answer warmly at any hour, and the young are most exposed. Providers added protections after serious cases; the pull remains.</p></article>
+    </div>
+    <p class="band rise">We care for devotees. Their attention and their daily sādhana are part of that care.</p>
+  </div>
+</section>
+
+<!-- 14 -->
+<section class="plate wallsec" id="pl-14" data-sc-act="pan" aria-labelledby="h-14">
+  <div class="stage">
+    <div class="wrap cap-wrap"><header class="cap"><div class="pl">Plate 14</div><p class="kick">For the tables</p><h2 id="h-14">Six Questions For This Room</h2></header></div>
+    <div class="rail-clip">
+      <div class="rail" id="rail">
+        <article class="q"><span class="qn">1.</span><h3>Image, voice and likeness</h3><p>May anyone generate the image, voice or video of Śrīla Prabhupāda, or of a devotee? Should a tool that answers in his person exist at all?</p></article>
+        <article class="q"><span class="qn">2.</span><h3>Our education</h3><p>Is AI usage permitted in essays and examinations, and to what extent?</p></article>
+        <article class="q"><span class="qn">3.</span><h3>Research</h3><p>How far may AI go in the studies and surveys we commission?</p></article>
+        <article class="q"><span class="qn">4.</span><h3>Devotee data</h3><p>What must never be entered into a public tool?</p></article>
+        <article class="q"><span class="qn">5.</span><h3>Policy ownership</h3><p>Which policies already exist globally, in Europe and in each yatra? Who is responsible for the gaps?</p></article>
+        <article class="q"><span class="qn">6.</span><h3>Accountability</h3><p>Who is responsible when AI goes wrong in ISKCON's name?</p></article>
+        <p class="band">These questions need named owners and an agreed process for decisions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 15 -->
+<section class="plate req" id="pl-15" data-sc-act="pin" aria-labelledby="h-15">
+  <div class="stage">
+    <header class="cap"><div class="pl">Plate 15</div><p class="kick">What this session asks</p><h2 id="h-15">A Request to Begin Policy Work</h2></header>
+    <p class="ask" id="ask">ELM asks the RGB to begin work on an AI policy for Europe.</p>
+    <p class="who">Pitambara dasa · Madayanti Mataji · break · discussion with the whole room</p>
+  </div>
+</section>
+
+<!-- 16 -->
+<section class="plate back" id="pl-16" data-sc-act="flow" aria-labelledby="h-16">
+  <div class="wrap">
+    <header class="cap rise"><div class="pl">Plate 16</div><p class="kick">Session resources</p><h2 id="h-16">Resources from Today’s Session</h2></header>
+    <p class="note rise">Check the version date when using a document.</p>
+    <ul class="refs rise">
+      <li><a href="https://haripetrov-stack.github.io/elm-2026-site/files/ELM-AI-presentation-v34.pdf">The slides of part one</a></li>
+      <li><a href="https://haripetrov-stack.github.io/iskcon-law-book/">The Law Book draft</a></li>
+      <li><a href="https://haripetrov-stack.github.io/elm-2026-site/files/notebooklm-corpus-MANIFEST.md">The corpus manifest</a></li>
+      <li><a href="https://haripetrov-stack.github.io/elm-2026-site/files/qa-report-sample.html">Sample QA report</a></li>
+      <li><a href="https://haripetrov-stack.github.io/elm-2026-site/files/prompt-translation-check.txt">The prompt</a></li>
+      <li><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report">Stanford HAI, The 2026 AI Index Report</a></li>
+      <li><a href="https://539405.fs1.hubspotusercontent-na1.net/hubfs/539405/AI%20Report/Virtuous%202026%20Nonprofit%20AI%20Adoption%20Report.pdf">Virtuous, 2026 Nonprofit AI Adoption Report</a></li>
+      <li><a href="https://doi.org/10.6028/NIST.AI.600-1">NIST AI 600-1, Generative AI Profile</a></li>
+      <li><a href="https://csrc.nist.gov/glossary/term/hash_function">NIST, hash function</a></li>
+      <li><a href="https://csrc.nist.gov/glossary/term/digital_signature">NIST, digital signature</a></li>
+      <li><a href="https://spec.c2pa.org/specifications/specifications/2.2/explainer/Explainer.html">C2PA, Content Credentials</a></li>
+      <li><a href="https://support.google.com/youtube/answer/2797370?hl=en">YouTube, Content ID</a></li>
+      <li><a href="https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act">European Commission, Article 50 of the AI Act</a></li>
+      <li><a href="https://arxiv.org/abs/2304.02819">arxiv.org/abs/2304.02819</a></li>
+      <li><a href="https://arxiv.org/abs/2602.05769">arxiv.org/abs/2602.05769</a></li>
+      <li><a href="https://www.commonsensemedia.org/sites/default/files/featured-content/files/justification-for-ai-safeguards-for-kids-2026.pdf">Common Sense Media, AI safeguards for kids, 2026</a></li>
+    </ul>
+    <div class="colophon rise">
+      <span class="label">European Leadership Meeting · 2026</span>
+      <a class="label" href="https://haripetrov-stack.github.io/elm-2026-site/">haripetrov-stack.github.io/elm-2026-site</a>
+      <a class="label" href="#index">Index</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<script>
+(function(){
+  var doc = document.documentElement;
+  doc.classList.add('js');
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var clamp = function(v){ return v < 0 ? 0 : v > 1 ? 1 : v; };
+
+  // Thumb index: built from the plate captions, so the index and the plates cannot disagree.
+  var plates = [].slice.call(document.querySelectorAll('.plate'));
+  var thumbs = document.getElementById('thumbs');
+  var tabs = plates.map(function(pl){
+    var a = document.createElement('a');
+    var n = pl.id.slice(3);
+    a.href = '#' + pl.id;
+    a.textContent = n;
+    var tip = document.createElement('span');
+    tip.className = 'tip';
+    tip.textContent = pl.querySelector('h2').textContent;
+    a.appendChild(tip);
+    a.setAttribute('aria-label', 'Plate ' + n + ', ' + tip.textContent);
+    thumbs.appendChild(a);
+    return a;
+  });
+  var pocketN = document.getElementById('pocket-n');
+
+  // Entrances fire once, on entry.
+  var counted = function(el){
+    var target = parseFloat(el.getAttribute('data-count')), suf = el.getAttribute('data-suffix') || '';
+    if (reduce || !target) return;
+    var t0 = performance.now(), dur = 1400;
+    (function tick(t){
+      var k = clamp((t - t0) / dur), e = 1 - Math.pow(1 - k, 3);
+      el.textContent = Math.round(target * e) + suf;
+      if (k < 1) requestAnimationFrame(tick);
+    })(t0);
+  };
+  var rises = document.querySelectorAll('.rise, .wipe');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if (!e.isIntersecting) return;
+        e.target.classList.add('in');
+        [].forEach.call(e.target.querySelectorAll('[data-count]'), counted);
+        io.unobserve(e.target);
+      });
+    }, {rootMargin: '0px 0px -10% 0px'});
+    [].forEach.call(rises, function(el){ io.observe(el); });
+  } else {
+    [].forEach.call(rises, function(el){ el.classList.add('in'); });
+  }
+
+  // Plate 15: the request assembles word by word under the hand.
+  var ask = document.getElementById('ask');
+  var words = ask.textContent.split(' ');
+  ask.textContent = '';
+  var wspans = words.map(function(w, i){
+    var s = document.createElement('span');
+    s.className = 'w';
+    s.textContent = w;
+    ask.appendChild(s);
+    if (i < words.length - 1) ask.appendChild(document.createTextNode(' '));
+    return s;
+  });
+
+  // Plate 14: the wall pans sideways while the room holds still.
+  var wall = document.getElementById('pl-14'), rail = document.getElementById('rail');
+  var panTravel = 0;
+  function layoutPan(){
+    if (reduce) { wall.classList.remove('pan-on'); wall.style.height = ''; panTravel = 0; return; }
+    wall.classList.add('pan-on');
+    panTravel = Math.max(0, rail.scrollWidth - window.innerWidth);
+    wall.style.height = (window.innerHeight + panTravel * 1.1) + 'px';
+  }
+
+  var front = document.querySelector('.front');
+  var peak = document.getElementById('pl-05'), req = document.getElementById('pl-15');
+  var cues = [].slice.call(peak.querySelectorAll('.cue'));
+  var dark = [peak];
+
+  function prog(el){
+    var r = el.getBoundingClientRect(), travel = el.offsetHeight - window.innerHeight;
+    return travel > 1 ? clamp(-r.top / travel) : (r.top <= 0 ? 1 : 0);
+  }
+
+  var ticking = false;
+  function frame(){
+    ticking = false;
+    var vh = window.innerHeight;
+    if (!reduce) front.style.setProperty('--py', Math.min(window.scrollY, vh) * 0.25);
+
+    var pp = prog(peak);
+    peak.style.setProperty('--p', reduce ? 1 : pp);
+    cues.forEach(function(c){ c.classList.toggle('on', reduce || pp >= parseFloat(c.getAttribute('data-at')) || peak.getBoundingClientRect().bottom < vh * 0.5); });
+
+    var rp = prog(req);
+    wspans.forEach(function(s, i){
+      var k = reduce ? 1 : clamp((rp * 1.8) * wspans.length - i);
+      s.style.setProperty('--wk', k);
+    });
+
+    if (panTravel) wall.style.setProperty('--px', (prog(wall) * panTravel).toFixed(1));
+
+    // which plate is under the reading line
+    var line = vh * 0.4, cur = -1;
+    for (var i = 0; i < plates.length; i++) { if (plates[i].getBoundingClientRect().top <= line) cur = i; }
+    tabs.forEach(function(t, i){ t.classList.toggle('cur', i === cur); });
+    pocketN.textContent = cur >= 0 ? 'Pl. ' + plates[cur].id.slice(3) + ' · Index' : 'Index';
+    var onDark = dark.some(function(d){ var r = d.getBoundingClientRect(); return r.top < vh * 0.5 && r.bottom > vh * 0.5; });
+    thumbs.classList.toggle('on-dark', onDark);
+  }
+  function onScroll(){ if (!ticking) { ticking = true; requestAnimationFrame(frame); } }
+  window.addEventListener('scroll', onScroll, {passive: true});
+  window.addEventListener('resize', function(){ layoutPan(); onScroll(); });
+  layoutPan();
+  frame();
+  doc.classList.add('sc-ready');
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function(){ layoutPan(); frame(); });
+})();
+</script>
+</body>
+</html>
